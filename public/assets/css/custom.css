@@ -47,6 +47,21 @@ body {
     background-repeat: repeat-x;
 }
 
+.pattern {
+    position: relative;
+}
+
+.pattern::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../images/pattern/style.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    opacity: 0.5;
+    z-index: -1;
+}
+
 .image-welcome {
     background-image: url(../images/3-.png);
     background-size: contain;

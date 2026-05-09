@@ -6,8 +6,9 @@
         </div>
     </section>
 
-    <section class="mx-auto w-full px-5 lg:px-10 pt-16 pb-28 bg-competition">
-        <div>
+    <section class="mx-auto w-full px-5 lg:px-10 pt-16 pb-28 pattern relative" >
+        <div class="bg-competition w-full h-full absolute"></div>
+        <div class="relative z-10">
             @foreach ($uniqueCategories as $category)
             <p class="font-semibold my-3">{{$category}}</p>
 

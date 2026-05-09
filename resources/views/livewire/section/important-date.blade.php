@@ -1,26 +1,28 @@
-<div class="flex justify-center">
-    <div class="w-full px-4 max-w-4xl">
-        <div class="overflow-x-auto">
-            <table class="table">
-                <tbody>
-                    <!-- row 1 -->
-                    @foreach ($importantDates as $date)
-                    <tr>
-                        <td style="width: 50%;">
-                            <p class="text-gray-500">{{$date->title}}</p>
-                        </td>
-                        <td>
-                            <p class="text-gray-500"> {{
-                            $date->date_end
-                            ? \Carbon\Carbon::parse($date->date)->format('F, jS') . ' - ' .
-                            \Carbon\Carbon::parse($date->date_end)->format('F jS, Y')
-                            : \Carbon\Carbon::parse($date->date)->format('F, jS Y')
-                            }}</p>
-                        </td>
-                    </tr>
-                    @endforeach
-                </tbody>
-            </table>
-        </div>
-    </div>
+<div class="flex justify-center items-center w-full">
+    <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+        @foreach($importantDates as $index => $date)
+        <li>
+            @if($index > 0)
+            <hr />
+            @endif
+            <div class="timeline-middle">
+                <i class="fa fa-calendar-check-o text-[#39B54A] text-lg"></i>
+            </div>
+            <div class="timeline-start mb-10 md:text-end">
+                <time class="font-mono italic">{{ $date->title }}</time>
+                <div class="text-lg font-black">{{
+                    $date->date_end
+                    ? \Carbon\Carbon::parse($date->date)->format('F, jS') . ' - ' .
+                    \Carbon\Carbon::parse($date->date_end)->format('F jS, Y')
+                    : \Carbon\Carbon::parse($date->date)->format('F, jS Y')
+                    }}</div>
+                {{-- {{ $date->title }} --}}
+            </div>
+            @if($index < $importantDates->count() - 1)
+                <hr />
+                @endif
+        </li>
+        @endforeach
+    </ul>
+
 </div>

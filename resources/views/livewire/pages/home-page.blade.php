@@ -11,14 +11,14 @@
                         <img src="{{asset('assets/images/logo/icon.png')}}" class="w-full max-w-40" alt="">
                     </div>
                     <div class="w-full ">
-                        <h1 class="text-xl lg:text-2xl text-[#302b88] font-bold mb-0 ">
+                        <h1 class="text-xl lg:text-3xl text-[#302b88] font-bold mb-0 ">
                             KONAS IX
                         </h1>
                         <h1 class="font-bold text-6xl lg:text-8xl tracking-widest text-[#39B54A] mt-0">HIFERI</h1>
                         <div class="flex flex-row w-full">
-                            <p class="text-xs">The National Congress of</p>
+                            <p class="text-sm">The 9<sup>th</sup> National Congress of</p>
                         </div>
-                        <p class="text-xs tracking-tighter">The Indonesian Association of Reproductive Endocrinology and
+                        <p class="text-sm tracking-tighter">Indonesian Association of Reproductive Endocrinology and
                             Fertility</p>
                     </div>
                 </div>
@@ -100,14 +100,14 @@
                         <div>
                             <div class="avatar">
                                 <img src="{{$welcomeMessage->image ? asset('storage/' . $welcomeMessage->image) : "
-                                        assets/images/speaker.png"}}" alt="{{$welcomeMessage->name}}"
+                                    assets/images/speaker.png"}}" alt="{{$welcomeMessage->name}}"
                                     class="w-full max-w-52 shadow-md rounded-lg ">
                             </div>
                         </div>
                         <div class="p-4 rounded-xl bg-[#39B54A] w-full max-w-sm mt-3 mb-5">
                             <div class="p-2 border-s border-white border-spacing-7">
                                 <p class="text-white text-xs italic"> {{$welcomeMessage->title}}
-                                    </p>
+                                </p>
                                 <h6 class="font-semibold text-white">{{$welcomeMessage->name}}</h6>
                             </div>
                         </div>
@@ -156,8 +156,7 @@
         </div>
     </section>
 
-    <section
-        class="lg:pb-16 pb-20 mt-10 grid grid-cols-1 lg:grid-cols-2 px-3 lg:px-8 gap-3 border-b-2 border-dashed border-[#302b88]/50">
+    <section class="lg:pb-16 pb-20 mt-10 grid grid-cols-1 lg:grid-cols-2 px-3 lg:px-8 gap-3">
         <div class=" px-3 lg:px-8">
             <img src="assets/images/logo/logo-all.png" alt="Icon" class="w-60 mb-5" class="">
             <div class="flex gap-1 mt-6">
@@ -170,9 +169,9 @@
                     </h1>
                     <h1 class="font-bold text-6xl lg:text-8xl tracking-widest text-[#39B54A] mt-0">HIFERI</h1>
                     <div class="flex flex-row w-full">
-                        <p class="text-xs">The National Congress of</p>
+                        <p class="text-sm">The 9<sup>th</sup> National Congress of</p>
                     </div>
-                    <p class="text-xs tracking-tighter">The Indonesian Association of Reproductive Endocrinology and
+                    <p class="text-sm tracking-tighter">Indonesian Association of Reproductive Endocrinology and
                         Fertility</p>
                 </div>
             </div>
@@ -222,19 +221,14 @@
         </div>
     </section>
 
-    <section class="lg:py-16 py-20">
+    <section class="lg:py-16 py-20 bg-[#52da64]/10 relative z-0 bg-competition">
         <div class="w-full pt-5">
             <div class="text-center pb-6 m-auto">
-                <h2 class="mb-1 text-3xl font-bold uppercase">important <span class="text-[#302b88] ">Dates</span></h2>
+                <h2 class="mb-5 md:mb-8 text-3xl font-bold uppercase">important <span class="">Dates</span></h2>
             </div>
             <livewire:section.important-date />
         </div>
     </section>
-
-
-
-    {{--
-    <livewire:section.competition /> --}}
 
     <section class="w-full pt-24 pb-3 px-2 lg:px-4 ">
         <div class="border-b-2 border-dashed border-[#302b88]/50 pb-10">
@@ -305,11 +299,13 @@
 
                 <div class="w-full ">
                     <a><img src="{{asset('assets/images/bandung/1.jpg')}}"
-                            class="w-full max-h-96 object-cover rounded-xl shadow-md saturate-150" alt="venue bandung "></a>
+                            class="w-full max-h-96 object-cover rounded-xl shadow-md saturate-150"
+                            alt="venue bandung "></a>
                 </div>
                 <div class="w-full ">
                     <a><img src="{{asset('assets/images/bandung/2.webp')}}"
-                            class="w-full max-h-96 object-cover rounded-xl shadow-md saturate-150" alt="venue bandung "></a>
+                            class="w-full max-h-96 object-cover rounded-xl shadow-md saturate-150"
+                            alt="venue bandung "></a>
                 </div>
                 <div class="w-full ">
                     <a><img src="{{asset('assets/images/bandung/3.webp')}}"
