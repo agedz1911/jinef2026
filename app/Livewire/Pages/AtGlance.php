@@ -19,10 +19,34 @@ class AtGlance extends Component
     public $sepuluh;
     public $sebelas;
 
+    public $search = '';
 
     public function mount()
     {
-        $this->atglances = ScheduleSession::all();
+        $this->loadData();
+    }
+
+    public function updatedSearch()
+    {
+        $this->loadData();
+    }
+
+    public function loadData()
+    {
+        $query = ScheduleSession::with('schedules');
+
+        if (!empty($this->search)) {
+            $query->where(function ($q) {
+                $q->where('title_ses', 'LIKE', '%' . $this->search . '%')
+                    ->orWhere('moderator', 'LIKE', '%' . $this->search . '%');
+            })->orWhereHas('schedules', function ($q) {
+                $q->where('topic_title', 'LIKE', '%' . $this->search . '%')
+                    ->orWhere('speaker', 'LIKE', '%' . $this->search . '%');
+            });
+        }
+
+        $this->atglances = $query->get();
+
         $this->delapan = $this->atglances->where('date', '2026-10-08')->sortBy('no_urut');
         $this->sembilan = $this->atglances->where('date', '2026-10-09')->sortBy('no_urut');
         $this->sepuluh = $this->atglances->where('date', '2026-10-10')->sortBy('no_urut');

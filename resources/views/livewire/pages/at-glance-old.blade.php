@@ -6,16 +6,10 @@
         </div>
     </section>
 
-    <div class="px-5 lg:px-10 mt-10">
-        <label class="input input-lg input-success rounded-lg w-full">
-            <i class="fa fa-search opacity-45 text-sm"></i>
-            <input wire:model.live='search' type="text" class="grow" placeholder="Search Topics, And Sessions" />
-        </label>
-    </div>
 
     <section class="px-5 md:px-10 pt-0 pb-10 md:py-20 bg-competition">
 
-        <div class="flex flex-wrap items-center justify-center">
+        <div class="flex items-center justify-center">
             <div x-data="{ openTab: 3 }" class="lg:w-11/12 w-full mx-auto">
                 <div class="">
                     <div class="mb-4 flex flex-wrap space-x-4 p-2 bg-white rounded-lg shadow-md">
@@ -42,15 +36,15 @@
                         <div class="overflow-x-auto">
                             <table class="table">
                                 <thead>
-                                    <tr>
-                                        <th style="width: 12%;"></th>
-                                        <th style="width: 12%;"></th>
-                                        <th style="width: 12%;"></th>
-                                        <th style="width: 12%;"></th>
-                                        <th style="width: 12%;"></th>
-                                        <th style="width: 12%;"></th>
-                                        <th style="width: 12%;"></th>
-                                        <th style="width: 12%;"></th>
+                                    <tr width="100%">
+                                        <th width="12.5%"></th>
+                                        <th width="12.5%"></th>
+                                        <th width="12.5%"></th>
+                                        <th width="12.5%"></th>
+                                        <th width="12.5%"></th>
+                                        <th width="12.5%"></th>
+                                        <th width="12.5%"></th>
+                                        <th width="12.5%"></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -620,15 +614,15 @@
                         <div class="overflow-x-auto">
                             <table class="table">
                                 <thead>
-                                    <tr>
-                                        <th style="width: 12%;"></th>
-                                        <th style="width: 12%;"></th>
-                                        <th style="width: 12%;"></th>
-                                        <th style="width: 12%;"></th>
-                                        <th style="width: 12%;"></th>
-                                        <th style="width: 12%;"></th>
-                                        <th style="width: 12%;"></th>
-                                        <th style="width: 12%;"></th>
+                                    <tr width="100%">
+                                        <th width="12.5%"></th>
+                                        <th width="12.5%"></th>
+                                        <th width="12.5%"></th>
+                                        <th width="12.5%"></th>
+                                        <th width="12.5%"></th>
+                                        <th width="12.5%"></th>
+                                        <th width="12.5%"></th>
+                                        <th width="12.5%"></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -1199,12 +1193,12 @@
                         <div class="overflow-x-auto">
                             <table class="table">
                                 <thead>
-                                    <tr class="text-base font-semibold mb-2">
-                                        <th style="width: 20%;">Ballroom 1,2,3</th>
-                                        <th style="width: 20%;">Ballroom 1</th>
-                                        <th style="width: 20%;">Ballroom 2</th>
-                                        <th style="width: 20%;">Ballroom 3</th>
-                                        <th style="width: 20%;">Room 1</th>
+                                    <tr width="100%" class="text-base font-semibold mb-2">
+                                        <th width="20%">Ballroom 1,2,3</th>
+                                        <th width="20%">Ballroom 1</th>
+                                        <th width="20%">Ballroom 2</th>
+                                        <th width="20%">Ballroom 3</th>
+                                        <th width="20%">Room 1</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -1564,11 +1558,11 @@
                                 <thead>
                                     <tr class="text-base font-semibold mb-2">
 
-                                        <th style="width: 20%;">Ballroom 1,2,3</th>
-                                        <th style="width: 20%;">Ballroom 1</th>
-                                        <th style="width: 20%;">Ballroom 2</th>
-                                        <th style="width: 20%;">Ballroom 3</th>
-                                        <th style="width: 20%;">Room 1</th>
+                                        <th width="20%">Ballroom 1,2,3</th>
+                                        <th width="20%">Ballroom 1</th>
+                                        <th width="20%">Ballroom 2</th>
+                                        <th width="20%">Ballroom 3</th>
+                                        <th width="20%">Room 1</th>
                                     </tr>
                                 </thead>
                                 <tbody>
