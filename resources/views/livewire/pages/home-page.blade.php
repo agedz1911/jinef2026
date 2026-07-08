@@ -16,9 +16,9 @@
                         </h1>
                         <h1 class="font-bold text-6xl lg:text-8xl tracking-widest text-[#39B54A] mt-0">HIFERI</h1>
                         <div class="flex flex-row w-full">
-                            <p class="text-sm">The 9<sup>th</sup> National Congress of</p>
+                            <p class="text-sm lg:text-base">The 9<sup>th</sup> National Congress of</p>
                         </div>
-                        <p class="text-sm tracking-tighter">Indonesian Association of Reproductive Endocrinology and
+                        <p class="text-sm lg:text-base tracking-tighter">Indonesian Association of Reproductive Endocrinology and
                             Fertility</p>
                     </div>
                 </div>
@@ -35,7 +35,7 @@
                         class="text-white hover:cursor-pointer border bg-[#262262] hover:border-[#262262] focus:ring-4 focus:outline-none focus:ring-[#262262] font-medium rounded-lg text-sm px-5 md:px-10 py-3 text-center  dark:border-[#262262] dark:text-[#262262] dark:hover:text-white dark:hover:bg-white dark:focus:ring-white"><i
                             class="fa-solid fa-file-download mr-1 text-xs"></i>Download Announcement </a>
                     <a href="/registration" wire:navigate
-                        class="btn text-sm px-5 md:px-10 py-3 text-center rounded-lg btn-lg btn-soft btn-success"><i
+                        class="btn text-sm px-5 md:px-10 py-3 text-center rounded-lg btn-lg btn-success"><i
                             class="fa-solid fa-pen-to-square"></i> Register Now </a>
                 </div>
             </div>
