@@ -336,7 +336,7 @@
         // Get current date and time
         const currentTime = new Date();
 
-        const targetTime = new Date(2026, 9, 8, 08, 00, 00);
+        const targetTime = new Date(2026, 9, 8, 8, 0, 0);
 
         // Update countdown time
         function updateCountdown() {
