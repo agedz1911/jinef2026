@@ -5,7 +5,7 @@ namespace App\Livewire\Pages;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
-#[Title('KONAS IX HIFERI - Topics')]
+#[Title('3rd JINeF - Topics')]
 class Topic extends Component
 {
     public function render()

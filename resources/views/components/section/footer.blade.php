@@ -1,12 +1,10 @@
 <footer class="pt-20 text-center text-white relative mt-10">
     <div class="absolute wave block md:hidden lg:block overflow-hidden w-full z-0 left-0 leading-none top-0">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path class="" fill-opacity="1"
-                d="M0,160L80,138.7C160,117,320,75,480,101.3C640,128,800,224,960,245.3C1120,267,1280,213,1360,186.7L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
-            </path>
+            <path fill-opacity="1" d="M0,256L288,64L576,128L864,288L1152,160L1440,0L1440,0L1152,0L864,0L576,0L288,0L0,0Z"></path>
         </svg>
     </div>
-    <div class="absolute inset-0 bg-gradient-to-b from-[#27AAE1] to-[#150F70]/90"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-[#9E1F63] to-[#3C3793]/90"></div>
     <div class="relative">
         <div class="flex flex-col items-center w-full max-w-4xl m-auto">
 
@@ -19,32 +17,32 @@
                     Jakarta 10130, Indonesia</p>
                 <div class="py-5 mt-3">
                     <ul class="m-0 p-0 flex flex-row gap-5 lg:gap-8 justify-center">
-                        <li class="bg-[#39B54A] rounded-md p-2 w-10 hover:bg-[#1e882c] tooltip-bottom tooltip"
-                            data-tip="hiferi2026@pharma-pro.com">
-                            <a href="mailto:hiferi2026@pharma-pro.com" class="">
+                        <li class="bg-[#9E1F63] rounded-md p-2 w-10 hover:bg-[#3C3793] tooltip-bottom tooltip"
+                            data-tip="jinef2026@pharma-pro.com">
+                            <a href="mailto:jinef2026@pharma-pro.com" class="">
                                 <i class="fa-solid fa-envelope-open-text text-xl"></i>
                             </a>
                         </li>
-                        <li class="bg-[#39B54A] rounded-md p-2 w-10 hover:bg-[#1e882c] tooltip-bottom tooltip"
+                        <li class="bg-[#9E1F63] rounded-md p-2 w-10 hover:bg-[#3C3793] tooltip-bottom tooltip"
                             data-tip="+6221 6386 9502">
                             <a href="tel:+622163869502" class="">
                                 <i class="fa fa-phone text-xl"></i>
                             </a>
                         </li>
-                        <li class="bg-[#39B54A] rounded-md p-2 w-10 hover:bg-[#1e882c] tooltip-bottom tooltip"
-                            data-tip="+62 816-995-230">
-                            <a href="tel:+62816995230" class="">
+                        <li class="bg-[#9E1F63] rounded-md p-2 w-10 hover:bg-[#3C3793] tooltip-bottom tooltip"
+                            data-tip="+62 858-9108-7800">
+                            <a href="tel:+6285891087800" class="">
                                 <i class="fa fa-mobile-screen text-xl"></i>
                             </a>
                         </li>
-                        <li class="bg-[#39B54A] rounded-md p-2 w-10 hover:bg-[#1e882c] tooltip-bottom tooltip"
-                            data-tip="+62 816-995-230 ">
-                            <a href="https://wa.me/+62816995230" class="">
+                        <li class="bg-[#9E1F63] rounded-md p-2 w-10 hover:bg-[#3C3793] tooltip-bottom tooltip"
+                            data-tip="+62 858-9108-7800 ">
+                            <a href="https://wa.me/+6285891087800" class="">
                                 <i class="fa fa-whatsapp text-xl"></i>
                             </a>
                         </li>
 
-                        <li class="bg-[#39B54A] rounded-md p-2 w-10 hover:bg-[#1e882c] tooltip-bottom tooltip"
+                        <li class="bg-[#9E1F63] rounded-md p-2 w-10 hover:bg-[#3C3793] tooltip-bottom tooltip"
                             data-tip="@ig">
                             <a href="javascript:void(0)" class="">
                                 <i class="fa fa-instagram text-xl"></i>
@@ -60,7 +58,6 @@
                     <li class="text-sm font-normal hover:text-[#b9608d] hover:underline"><a href="{{route('program-at-glance')}}">Schedule</a></li>
                     <li class="text-sm font-normal hover:text-[#b9608d] hover:underline"><a href="{{route('registration')}}">Registration</a></li>
                     <li class="text-sm font-normal hover:text-[#b9608d] hover:underline"><a href="{{route('submission')}}">Submission</a></li>
-                    <li class="text-sm font-normal hover:text-[#b9608d] hover:underline"><a href="{{route('visiting')}}">Venue</a>
                     </li>
                 </ul>
             </div>

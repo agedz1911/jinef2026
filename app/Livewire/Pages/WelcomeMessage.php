@@ -3,7 +3,10 @@
 namespace App\Livewire\Pages;
 
 use App\Models\WelcomeMessage as ModelsWelcomeMessage;
+use Livewire\Attributes\Title;
 use Livewire\Component;
+
+#[Title('3rd JINeF - Welcome Message')]
 
 class WelcomeMessage extends Component
 {

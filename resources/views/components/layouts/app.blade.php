@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{{ $title ?? 'HIFERI 2026' }}</title>
-    <meta name="description" content="The National Congress of The Indonesian Association of Reproductive Endocrinology and Fertility" />
-    <meta name="keywords" content="Endocrinology and fertility" />
+    <title>{{ $title ?? 'JINEF 2026' }}</title>
+    <meta name="description" content="The 3rd Jakarta International Neurosurgery Forum" />
+    <meta name="keywords" content="Neurosurgery, Jakarta, International, Forum, Neurosurgeon" />
     <meta name="author" content="AV-PRO" />
 
     <!-- Custom CSS -->
@@ -27,19 +27,7 @@
 
     <!-- theme daisyui -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@$5/themes.css" rel="stylesheet" type="text/css" /> -->
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4QV336SVMX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-4QV336SVMX');
-    </script>
-
+    
 </head>
 
 <body>
@@ -49,7 +37,7 @@
 
     <!-- Back-to-top Button start -->
     <button onclick="topFunction()" id="back-to-top"
-        class="fixed rounded z-10 bottom-5 end-5 bg-[#39B54A] text-white btn btn-sm hover:scale-105">
+        class="fixed rounded z-10 bottom-5 end-5 bg-[#D82128] border-none shadow-none text-white btn btn-sm hover:scale-105">
         <i class="fa-solid fa-angles-up"></i>
     </button>
     <!-- Back-to-top Button end -->

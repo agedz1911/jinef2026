@@ -1,15 +1,15 @@
 <div wire:init="loadFaculties">
-    <section class="breadcrumbs relative pb-0">
-        <div class="absolute inset-0 bg-gradient-to-t from-[#27AAE1]/80 to-[#39B54A]/10"></div>
+    <section class=" relative pb-0">
+        <div class="absolute inset-0 bg-gradient-to-l from-[#9E1F63] to-[#3C3793]"></div>
         <div class="py-16 lg:py-28 text-center relative">
-            <h2 class=" uppercase text-2xl font-bold tracking-wide lg:text-4xl">faculties</h2>
+            <h2 class="text-white uppercase text-2xl font-bold tracking-wide lg:text-4xl">faculties</h2>
         </div>
     </section>
 
     <section class="mx-auto w-full px-5 md:px-10 pt-0 pb-10 md:py-20">
         <div class="">
             <div class="w-full px-3">
-                <label class="input input-success rounded-xl input-lg w-full">
+                <label class="input input-error rounded-xl input-lg w-full">
                     <i class="fa-solid fa-search h-[1em] opacity-50"></i>
                     <input wire:model.live.debounce.500ms="searchTerm" type="text" class="w-full" required
                         placeholder="Search Faculties.." />
@@ -19,7 +19,7 @@
                 <!-- name of each tab group should be unique -->
                 <div class="tabs tabs-border justify-evenly mb-5">
                     <input type="radio" name="my_tabs_2"
-                        class="tab uppercase tracking-wider text-lg hover:text-[#262262] text-[#39B54A]"
+                        class="tab uppercase tracking-wider text-lg hover:text-[#262262] text-[#9E1F63]"
                         aria-label="Indonesian Faculties" checked="checked" />
                     <div class="tab-content  p-5 rounded-lg">
                         @if (!$readyToLoad)
@@ -48,7 +48,7 @@
                                 </figure>
                                 <div class="card-body text-center">
                                     <h2 onclick="my_modal_{{$loop->index}}.showModal()"
-                                        class="text-xl font-semibold text-[#39B54A] hover:text-[#262262] hover:cursor-pointer">
+                                        class="text-xl font-semibold text-[#9E1F63] hover:text-[#262262] hover:cursor-pointer">
                                         {{$indo->name}}
                                     </h2>
                                     <p>{{$indo->description}}</p>
@@ -68,7 +68,7 @@
                                             assets/images/speaker.png"}}" alt="Photo">
                                         <div>
                                             <p class="mb-0"><span
-                                                    class="text-[#39B54A] text-lg font-semibold">{{$indo->name}}</span>
+                                                    class="text-[#9E1F63] text-lg font-semibold">{{$indo->name}}</span>
                                                 <br>
                                                 {{$indo->country}}
                                             </p>
@@ -109,7 +109,7 @@
                     </div>
 
                     <input type="radio" name="my_tabs_2"
-                        class="tab uppercase tracking-wider  text-lg hover:text-[#262262] text-[#39B54A]"
+                        class="tab uppercase tracking-wider  text-lg hover:text-[#262262] text-[#9E1F63]"
                         aria-label="International faculties"  />
                     <div class="tab-content  p-5 rounded-lg">
                         {{-- @dd($indofaculties) --}}
@@ -138,7 +138,7 @@
                                 </figure>
                                 <div class="card-body text-center">
                                     <h2 onclick="my_modal_f{{$loop->index}}.showModal()"
-                                        class="text-xl font-semibold text-[#39B54A] hover:cursor-pointer hover:text-[#262262]">
+                                        class="text-xl font-semibold text-[#9E1F63] hover:cursor-pointer hover:text-[#262262]">
                                         {{$foreign->name}}
                                     </h2>
                                     <div class="flex justify-center">
@@ -165,7 +165,7 @@
                                             assets/images/speaker.png"}}" alt="{{$foreign->name}}">
                                         <div>
                                             <p class="mb-0"><span
-                                                    class="text-[#39B54A] text-lg font-semibold">{{$foreign->name}}</span>
+                                                    class="text-[#9E1F63] text-lg font-semibold">{{$foreign->name}}</span>
                                                 <br>
                                                 {{$foreign->country}}
                                             </p>

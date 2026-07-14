@@ -1,8 +1,8 @@
 <div>
-    <section class="breadcrumbs relative pb-0">
-        <div class="absolute inset-0 bg-gradient-to-t from-[#27AAE1]/80 to-[#39B54A]/10"></div>
+    <section class=" relative pb-0">
+        <div class="absolute inset-0 bg-gradient-to-l from-[#9E1F63] to-[#3C3793]"></div>
         <div class="py-16 lg:py-28 text-center relative">
-            <h2 class=" uppercase text-2xl font-bold tracking-wide lg:text-4xl">Topics</h2>
+            <h2 class="text-white uppercase text-2xl font-bold tracking-wide lg:text-4xl">Topics</h2>
         </div>
     </section>
 
