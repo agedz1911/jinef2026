@@ -1,4 +1,4 @@
-<p align="center">HIFERI 2026</p>
+<p align="center">JINEF 2026</p>
 
 
 
