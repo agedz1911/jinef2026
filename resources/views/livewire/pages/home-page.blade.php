@@ -158,7 +158,7 @@
                                     class="w-full max-w-52 shadow-md rounded-lg ">
                             </div>
                         </div>
-                        <div class="p-4 rounded-xl bg-[#39B54A] w-full max-w-sm mt-3 mb-5">
+                        <div class="p-4 rounded-xl bg-[#9E1F63] w-full max-w-sm mt-3 mb-5">
                             <div class="p-2 border-s border-white border-spacing-7">
                                 <p class="text-white text-xs italic"> {{$welcomeMessage->title}}
                                 </p>
@@ -271,7 +271,7 @@
                             <!-- <h5 class="text-white pb-2">RECEPTION INFO:</h5>
                                     <p class="pb-5 m-0">Booking: (+62) 1919-2020</p> -->
                             <a href="https://www.google.com/maps/dir//Novotel+Jakarta+Mangga+Dua+Square,+Jl.+Gunung+Sahari+No.3,+Mangga+Dua,+Jakarta+10720,+Indonesia/@-6.1381542,106.8292809,17z/data=!4m19!1m10!3m9!1s0x2e69f5e95865ff97:0xb8a7aa655d685d39!2sNovotel+Jakarta+Mangga+Dua+Square!5m2!4m1!1i2!8m2!3d-6.1381542!4d106.8292809!16s%2Fg%2F1td8w6x8!4m7!1m0!1m5!1m1!1s0x2e69f5e95865ff97:0xb8a7aa655d685d39!2m2!1d106.8292809!2d-6.1381542?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D"
-                                target="_blank" class="hover:text-[#39B54A]">Get Directions</a>
+                                target="_blank" class="hover:text-[#9E1F63]">Get Directions</a>
                         </div>
                     </div>
                 </div>
