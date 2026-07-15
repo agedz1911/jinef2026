@@ -47,10 +47,10 @@ class AtGlance extends Component
 
         $this->atglances = $query->get();
 
-        $this->delapan = $this->atglances->where('date', '2026-10-08')->sortBy('no_urut');
-        $this->sembilan = $this->atglances->where('date', '2026-10-09')->sortBy('no_urut');
-        $this->sepuluh = $this->atglances->where('date', '2026-10-10')->sortBy('no_urut');
-        $this->sebelas = $this->atglances->where('date', '2026-10-11')->sortBy('no_urut');
+        $this->delapan = $this->atglances->where('date', '2026-11-12')->sortBy('no_urut');
+        $this->sembilan = $this->atglances->where('date', '2026-11-13')->sortBy('no_urut');
+        $this->sepuluh = $this->atglances->where('date', '2026-11-14')->sortBy('no_urut');
+        $this->sebelas = $this->atglances->where('date', '2026-11-15')->sortBy('no_urut');
     }
 
     public function render()

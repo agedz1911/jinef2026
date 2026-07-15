@@ -38,7 +38,7 @@
 
                             @foreach ($indofaculties as $indo)
                             <div
-                                class="card bg-emerald-100/10 shadow-sm p-0 hover:shadow-md hover:scale-105 transition-all duration-200">
+                                class="card bg-[#3C3793]/10 shadow-sm p-0 hover:shadow-md hover:scale-105 transition-all duration-200">
                                 
                                 <figure onclick="my_modal_{{$loop->index}}.showModal()"
                                     class="relative hover:cursor-pointer ">
@@ -63,7 +63,7 @@
                                             class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
                                     </form>
                                     <div class="flex items-center gap-3 pb-3">
-                                        <img class="rounded-full bg-accent/20 shadow w-20 object-cover"
+                                        <img class="rounded-full bg-[#3C3793]/20 shadow w-20 h-20 object-cover"
                                             src="{{$indo->image ? asset('storage/' . $indo->image) : "
                                             assets/images/speaker.png"}}" alt="Photo">
                                         <div>
@@ -128,7 +128,7 @@
                         <div wire:loading.remove wire:target="searchTerm" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                             @foreach ($foreignfaculties as $foreign)
                             <div
-                                class="card bg-emerald-100/10 shadow-sm p-0 hover:shadow-md hover:scale-105 transition-all duration-200">
+                                class="card bg-[#3C3793]/10 shadow-sm p-0 hover:shadow-md hover:scale-105 transition-all duration-200">
                                 <figure onclick="my_modal_f{{$loop->index}}.showModal()"
                                     class="relative hover:cursor-pointer ">
                                     <img src="{{$foreign->image ? asset('storage/' . $foreign->image) : "
@@ -160,7 +160,7 @@
                                             class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
                                     </form>
                                     <div class="flex items-center gap-3 pb-3">
-                                        <img class="rounded-full bg-accent/20 shadow w-20 object-cover"
+                                        <img class="rounded-full bg-[#3C3793]/20 shadow w-20 h-20 object-cover"
                                             src="{{$foreign->image ? asset('storage/' . $foreign->image) : "
                                             assets/images/speaker.png"}}" alt="{{$foreign->name}}">
                                         <div>

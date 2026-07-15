@@ -11,7 +11,7 @@
                         <img src="{{asset('assets/images/logo/icon.png')}}" class="w-full max-w-40" alt="">
                     </div>
                     <div class="w-full ">
-                        <h1 class="font-bold text-2xl lg:text-6xl italic text-white mt-0 mb-4">The 3<sup>rd</sup>
+                        <h1 class="font-bold text-2xl lg:text-5xl italic text-white mt-0 mb-4">The 3<sup>rd</sup>
                             Jakarta International <br> Neurosurgery Forum (JINeF)</h1>
                         <div class="flex flex-row w-full">
                             <p class="text-sm lg:text-base text-white">in conjunction with <br> 6<sup>th</sup> Annual
@@ -24,7 +24,7 @@
                         - 15<sup>th</sup> 2026</span> Novotel Jakarta Mangga Dua Square, Jakarta, Indonesia
                 </p>
                 <div class="w-full">
-                    <p class="italic mt-3 text-[#F8D73D] font-bold text-xl md:text-3xl">" Synergy in Neurosurgery:
+                    <p class="italic mt-3 text-[#F8D73D] font-bold text-xl md:text-2xl">" Synergy in Neurosurgery:
                         Bridging Specialities for Excellence "</p>
                 </div>
                 <div class="mt-7 w-full gap-1 flex flex-wrap">

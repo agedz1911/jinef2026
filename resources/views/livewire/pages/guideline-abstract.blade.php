@@ -21,7 +21,7 @@
                         <h2 class="card-title">Online <span class="text-[#9E1F63]">Submission</span></h2>
                         <p class="text-gray-600 italic">*make sure the file complies with the guidelines.</p>
                         <div class="card-actions justify-end mt-5">
-                            <a href="https://expo.virconex-id.com/registration/hiferi2026/index.php/add_abstract/index" class="btn btn-warning"><i class="fa-solid fa-upload me-1"></i> Submit Abstract</a>
+                            <a href="https://expo.virconex-id.com/registration/jinef2026/index.php/add_abstract/index" class="btn btn-warning"><i class="fa-solid fa-upload me-1"></i> Submit Abstract</a>
                         </div>
                     </div>
                 </div>

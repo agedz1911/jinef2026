@@ -44,7 +44,8 @@
         <div class="drawer-content flex flex-col">
             <div class="navbar">
                 <div class="navbar-start">
-                    <img src="assets/images/logo/logo-event.png" class="h-full max-h-12" alt="Logo" />
+                    <img src="assets/images/logo/logo-event.png" class="h-full max-h-12 hidden md:block" alt="Logo" />
+                    <img src="assets/images/logo/logo-event-dark.png" class="h-full max-h-12 md:hidden" alt="Logo" />
                 </div>
                 <div class="navbar-center hidden lg:flex py-2">
                     <x-section.menu />
