@@ -11,15 +11,15 @@
                 <i class="fa fa-phone">
                 </i>
             </a>
-            <a class="btn border-none btn-warning btn-sm rounded-full shadow-none w-8" href="https://wa.me/+6285891087800" target="_blank`">
+            <a class="btn border-none btn-warning btn-sm rounded-full shadow-none w-8" href="https://wa.me/+6285891087800" target="_blank">
                 <i class="fa fa-whatsapp">
                 </i>
             </a>
-            <a class="btn border-none btn-warning btn-sm rounded-full shadow-none w-8" href="https://wa.me/+6281317857586" target="_blank`">
+            <a class="btn border-none btn-warning btn-sm rounded-full shadow-none w-8" href="https://wa.me/+6281317857586" target="_blank">
                 <i class="fa fa-whatsapp">
                 </i>
             </a>
-            <a class="btn border-none btn-warning btn-sm rounded-full shadow-none w-8" href="#">
+            <a class="btn border-none btn-warning btn-sm rounded-full shadow-none w-8" href="https://www.instagram.com/jinef2026_" target="_blank">
                 <i class="fa fa-instagram">
                 </i>
             </a>

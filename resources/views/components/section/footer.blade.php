@@ -43,8 +43,8 @@
                         </li>
 
                         <li class="bg-[#9E1F63] rounded-md p-2 w-10 hover:bg-[#3C3793] tooltip-bottom tooltip"
-                            data-tip="@ig">
-                            <a href="javascript:void(0)" class="">
+                            data-tip="@jinef2026_">
+                            <a href="https://www.instagram.com/jinef2026_" target="_blank" class="">
                                 <i class="fa fa-instagram text-xl"></i>
                             </a>
                         </li>

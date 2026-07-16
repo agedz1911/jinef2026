@@ -57,7 +57,7 @@
             </div>
             <div class="stat-title font-semibold">Instagram</div>
             <div class="stat-desc">
-                @ig
+                <a class="hover:underline hover:text-error" target="_blank" href="https://www.instagram.com/jinef2026_">@jinef2026_</a>
             </div>
 
         </div>
