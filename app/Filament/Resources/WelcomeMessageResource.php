@@ -32,7 +32,15 @@ class WelcomeMessageResource extends Resource
             ->schema([
                 TextInput::make('name'),
                 TextInput::make('title'),
-                MarkdownEditor::make('description'),
+                TextInput::make('name2')
+                    ->label('Name 2'),
+                TextInput::make('title2')
+                    ->label('Title 2'),
+                TextInput::make('no_urut')
+                    ->numeric(),
+                Toggle::make('is_active')
+                    ->inline()
+                    ->default(true),
                 FileUpload::make('image')
                     ->maxSize(3072)
                     ->downloadable()
@@ -41,11 +49,17 @@ class WelcomeMessageResource extends Resource
                     ->image()
                     ->imageEditor()
                     ->directory('welcomeMessage'),
-                TextInput::make('no_urut')
-                    ->numeric(),
-                Toggle::make('is_active')
-                    ->inline()
-                    ->default(true),
+                FileUpload::make('image2')
+                    ->label('Image 2')
+                    ->maxSize(3072)
+                    ->downloadable()
+                    ->reorderable()
+                    ->panelLayout('grid')
+                    ->image()
+                    ->imageEditor()
+                    ->directory('welcomeMessage'),
+                MarkdownEditor::make('description')
+                    ->columnSpan('full'),
             ]);
     }
 
@@ -57,6 +71,9 @@ class WelcomeMessageResource extends Resource
                 ImageColumn::make('image'),
                 TextColumn::make('name'),
                 TextColumn::make('title'),
+                ImageColumn::make('image2'),
+                TextColumn::make('name2'),
+                TextColumn::make('title2'),
                 TextColumn::make('description')
                     ->markdown()
                     ->limit(80),

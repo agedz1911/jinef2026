@@ -12,11 +12,12 @@
                     </div>
                     <div class="w-full max-w-2xl">
                         <h1 class="font-bold text-lg lg:text-4xl text-white mt-0 mb-4">The 3<sup>rd</sup>
-                            Jakarta International  Neurosurgery Forum (JINeF) <br>
+                            Jakarta International Neurosurgery Forum (JINeF) <br>
                             <span class="lg:text-xl italic">in conjunction with </span><br>
-                        <span class="lg:text-3xl"> 6<sup>th</sup> Annual
-                                Scientific Meeting Indonesian  Neurosurgical Pain Society (INPS)</span></h1>
-                        
+                            <span class="lg:text-3xl"> 6<sup>th</sup> Annual
+                                Scientific Meeting Indonesian Neurosurgical Pain Society (INPS)</span>
+                        </h1>
+
                     </div>
                 </div>
                 <p class="text-white mt-5">
@@ -83,10 +84,11 @@
                 </div>
                 <div class="w-full ">
                     <h1 class="font-bold text-lg lg:text-3xl text-[#9E1F63] mt-0 mb-4">The 3<sup>rd</sup>
-                            Jakarta International  Neurosurgery Forum (JINeF) <br>
-                            <span class="lg:text-lg italic">in conjunction with </span><br>
+                        Jakarta International Neurosurgery Forum (JINeF) <br>
+                        <span class="lg:text-lg italic">in conjunction with </span><br>
                         <span class="lg:text-2xl"> 6<sup>th</sup> Annual
-                                Scientific Meeting Indonesian  Neurosurgical Pain Society (INPS)</span></h1>
+                            Scientific Meeting Indonesian Neurosurgical Pain Society (INPS)</span>
+                    </h1>
                 </div>
             </div>
             <div class="w-full max-w-2xl">
@@ -150,19 +152,37 @@
                             <a class="text-pink-200 hover:text-white hover:underline" href="/welcome-message">Read
                                 More...</a>
                         </div>
-                        <div>
-                            <div class="avatar">
-                                <img src="{{$welcomeMessage->image ? asset('storage/' . $welcomeMessage->image) : "
-                                    assets/images/speaker.png"}}" alt="{{$welcomeMessage->name}}"
-                                    class="w-full max-w-52 shadow-md rounded-lg ">
+                        <div class="mt-3 flex flex-col md:flex-row justify-between">
+                            <div>
+                                <div class="avatar">
+                                    <img src="{{$welcomeMessage->image ? asset('storage/' . $welcomeMessage->image) : "
+                                        assets/images/speaker.png"}}" alt="{{$welcomeMessage->name}}"
+                                        class="w-full max-w-52 shadow-md rounded-lg ">
+                                </div>
+                                <div class="p-4 rounded-xl bg-[#9E1F63] w-full max-w-sm mt-3 mb-5">
+                                    <div class="p-2 border-s border-white border-spacing-7">
+                                        <p class="text-white text-xs italic"> {{$welcomeMessage->title}}
+                                        </p>
+                                        <h6 class="font-semibold text-white">{{$welcomeMessage->name}}</h6>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="p-4 rounded-xl bg-[#9E1F63] w-full max-w-sm mt-3 mb-5">
-                            <div class="p-2 border-s border-white border-spacing-7">
-                                <p class="text-white text-xs italic"> {{$welcomeMessage->title}}
-                                </p>
-                                <h6 class="font-semibold text-white">{{$welcomeMessage->name}}</h6>
+                            @if ($welcomeMessage->name2 && $welcomeMessage->title2 !== null)
+                            <div>
+                                <div class="avatar">
+                                    <img src="{{$welcomeMessage->image2 ? asset('storage/' . $welcomeMessage->image2) : "
+                                        assets/images/speaker.png"}}" alt="{{$welcomeMessage->name2}}"
+                                        class="w-full max-w-52 shadow-md rounded-lg ">
+                                </div>
+                                <div class="p-4 rounded-xl bg-[#9E1F63] w-full max-w-sm mt-3 mb-5">
+                                    <div class="p-2 border-s border-white border-spacing-7">
+                                        <p class="text-white text-xs italic"> {{$welcomeMessage->title2}}
+                                        </p>
+                                        <h6 class="font-semibold text-white">{{$welcomeMessage->name2}}</h6>
+                                    </div>
+                                </div>
                             </div>
+                            @endif
                         </div>
                     </div>
                     @endforeach
@@ -265,7 +285,8 @@
                             <p class="pb-5 m-0 text-sm"> Novotel Jakarta Mangga Dua Square </p>
                             <h5 class="pb-2 tracking-wide font-semibold">ADDRESS :
                             </h5>
-                            <p class="pb-5 m-0 text-sm"> Jl. Gunung Sahari No.3, Mangga Dua, Jakarta 10720, Indonesia </p>
+                            <p class="pb-5 m-0 text-sm"> Jl. Gunung Sahari No.3, Mangga Dua, Jakarta 10720, Indonesia
+                            </p>
 
                             <!-- <h5 class="text-white pb-2">RECEPTION INFO:</h5>
                                     <p class="pb-5 m-0">Booking: (+62) 1919-2020</p> -->
@@ -275,7 +296,7 @@
                     </div>
                 </div>
                 <div class="lg:w-2/3 w-full px-1 flex flex-col md:flex-row gap-2">
-                   
+
                     <iframe class="rounded-lg w-full "
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.9445350877345!2d106.8292808749897!3d-6.138154193848746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5e95865ff97%3A0xb8a7aa655d685d39!2sNovotel%20Jakarta%20Mangga%20Dua%20Square!5e0!3m2!1sid!2sid!4v1784044670327!5m2!1sid!2sid"
                         width="600" style="border:0;" allowfullscreen="" loading="lazy"
