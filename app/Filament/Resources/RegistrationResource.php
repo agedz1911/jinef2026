@@ -37,6 +37,7 @@ class RegistrationResource extends Resource
                         'workshop' => 'Workshop',
                         'workshop microsurgery' => 'Workshop microsurgery ',
                         'master class' => 'Master Class',
+                        'Nurse Symposium' => 'Nurse Symposium',
                     ])
                     ->native(false),
                 Select::make('wilayah_reg')

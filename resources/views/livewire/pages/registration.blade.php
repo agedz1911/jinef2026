@@ -96,13 +96,13 @@
                             <th scope="col" class="px-6 py-3">
                                 Category
                             </th>
-                            <th scope="col" class="px-6 py-3">
-                                for General Practitioner and Primary Care Providers <br>
-                                1 August 2026
-                                Swissôtel Jakarta PIK Avenue, Jakarta
+                             <th scope="col" class="px-6 py-3">
+                                Early Bird Registration <br>
+                                up to 31 August 2026
                             </th>
                             <th scope="col" class="px-6 py-3">
-                                Nurse / Medical Students
+                                Late/Onsite Registration <br>
+                                Start from 1 September 2026
                             </th>
 
                         </tr>

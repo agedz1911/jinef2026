@@ -6,17 +6,17 @@
 
             <div class="px-5 md:px-20 order-1 lg:order-2 w-full max-w-7xl flex flex-col items-center md:items-start">
                 <img src="{{asset('assets/images/logo/logo-all.png')}}" class="w-40 rounded-xl" alt="Banner">
-                <div class="flex gap-1 mt-6">
+                <div class="flex gap-1">
                     <div>
                         <img src="{{asset('assets/images/logo/icon.png')}}" class="w-full max-w-40" alt="">
                     </div>
-                    <div class="w-full ">
-                        <h1 class="font-bold text-2xl lg:text-5xl italic text-white mt-0 mb-4">The 3<sup>rd</sup>
-                            Jakarta International <br> Neurosurgery Forum (JINeF)</h1>
-                        <div class="flex flex-row w-full">
-                            <p class="text-sm lg:text-base text-white">in conjunction with <br> 6<sup>th</sup> Annual
-                                Scientific Meeting Indonesian Neurosurgical Pain Society (INPS)</p>
-                        </div>
+                    <div class="w-full max-w-2xl">
+                        <h1 class="font-bold text-lg lg:text-4xl text-white mt-0 mb-4">The 3<sup>rd</sup>
+                            Jakarta International  Neurosurgery Forum (JINeF) <br>
+                            <span class="lg:text-xl italic">in conjunction with </span><br>
+                        <span class="lg:text-3xl"> 6<sup>th</sup> Annual
+                                Scientific Meeting Indonesian  Neurosurgical Pain Society (INPS)</span></h1>
+                        
                     </div>
                 </div>
                 <p class="text-white mt-5">
@@ -82,12 +82,11 @@
                     <img src="{{asset('assets/images/logo/icon.png')}}" class="w-full max-w-40" alt="">
                 </div>
                 <div class="w-full ">
-                    <h1 class="font-bold text-xl lg:text-4xl italic text-[#9E1F63] mt-0 mb-4">The 3<sup>rd</sup> Jakarta
-                        International <br> Neurosurgery Forum (JINeF)</h1>
-                    <div class="flex flex-row w-full">
-                        <p class="text-sm lg:text-base text-[#9E1F63]">in conjunction with <br> 6<sup>th</sup> Annual
-                            Scientific Meeting Indonesian Neurosurgical Pain Society (INPS)</p>
-                    </div>
+                    <h1 class="font-bold text-lg lg:text-3xl text-[#9E1F63] mt-0 mb-4">The 3<sup>rd</sup>
+                            Jakarta International  Neurosurgery Forum (JINeF) <br>
+                            <span class="lg:text-lg italic">in conjunction with </span><br>
+                        <span class="lg:text-2xl"> 6<sup>th</sup> Annual
+                                Scientific Meeting Indonesian  Neurosurgical Pain Society (INPS)</span></h1>
                 </div>
             </div>
             <div class="w-full max-w-2xl">
