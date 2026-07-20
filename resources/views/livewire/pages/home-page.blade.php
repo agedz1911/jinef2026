@@ -6,27 +6,29 @@
 
             <div class="px-5 md:px-20 order-1 lg:order-2 w-full max-w-7xl flex flex-col items-center md:items-start">
                 <img src="{{asset('assets/images/logo/logo-all.png')}}" class="w-40 rounded-xl" alt="Banner">
-                <div class="flex gap-1">
+                <div class="flex gap-1 items-center">
                     <div>
                         <img src="{{asset('assets/images/logo/icon.png')}}" class="w-full max-w-40" alt="">
                     </div>
                     <div class="w-full max-w-2xl">
-                        <h1 class="font-bold text-lg lg:text-4xl text-white mt-0 mb-4">The 3<sup>rd</sup>
-                            Jakarta International  Neurosurgery Forum (JINeF) <br>
-                            <span class="lg:text-xl italic">in conjunction with </span><br>
-                        <span class="lg:text-3xl"> 6<sup>th</sup> Annual
-                                Scientific Meeting Indonesian  Neurosurgical Pain Society (INPS)</span></h1>
-                        
+                        <h1 class="font-bold mb-2 text-3xl lg:text-6xl text-white mt-0 md:tracking-widest">JINeF - PIT
+                            INPS</h1>
+                        <p class="text-white text-xs md:text-base">The 3<sup>rd</sup>
+                            Jakarta International Neurosurgery Forum (JINeF)
+                            <span class=" italic">in conjunction with </span><br>
+                            6<sup>th</sup> Annual
+                            Scientific Meeting Indonesian Neurosurgical Pain Society (INPS)
+                        </p>
                     </div>
+                </div>
+                <div class="w-full">
+                    <p class="italic mt-3 text-[#F8D73D] font-bold text-xl md:text-2xl">" Synergy in Neurosurgery:
+                        Bridging Specialities for Excellence "</p>
                 </div>
                 <p class="text-white mt-5">
                     <span class="bg-[#9E1F63] md:px-5 px-3 py-1 rounded-br-2xl rounded-tl-2xl">November 12<sup>th</sup>
                         - 15<sup>th</sup> 2026</span> Novotel Jakarta Mangga Dua Square, Jakarta, Indonesia
                 </p>
-                <div class="w-full">
-                    <p class="italic mt-3 text-[#F8D73D] font-bold text-xl md:text-2xl">" Synergy in Neurosurgery:
-                        Bridging Specialities for Excellence "</p>
-                </div>
                 <div class="mt-7 w-full gap-1 flex flex-wrap">
                     <a
                         class="text-white hover:cursor-pointer border bg-[#9E1F63] hover:border-[#9E1F63] focus:ring-4 focus:outline-none focus:ring-[#9E1F63] font-medium rounded-lg text-sm px-5 md:px-10 py-3 text-center  dark:border-[#9E1F63] dark:text-[#9E1F63] dark:hover:text-white dark:hover:bg-white dark:focus:ring-white"><i
@@ -82,11 +84,14 @@
                     <img src="{{asset('assets/images/logo/icon.png')}}" class="w-full max-w-40" alt="">
                 </div>
                 <div class="w-full ">
-                    <h1 class="font-bold text-lg lg:text-3xl text-[#9E1F63] mt-0 mb-4">The 3<sup>rd</sup>
-                            Jakarta International  Neurosurgery Forum (JINeF) <br>
-                            <span class="lg:text-lg italic">in conjunction with </span><br>
-                        <span class="lg:text-2xl"> 6<sup>th</sup> Annual
-                                Scientific Meeting Indonesian  Neurosurgical Pain Society (INPS)</span></h1>
+                    <h1 class="font-bold mb-2 text-3xl lg:text-6xl text-[#9E1F63] mt-0 md:tracking-wider">JINeF - PIT
+                        INPS</h1>
+                    <p class="text-[#9E1F63] text-xs md:text-base">The 3<sup>rd</sup>
+                        Jakarta International Neurosurgery Forum (JINeF)
+                        <span class=" italic">in conjunction with </span><br>
+                        6<sup>th</sup> Annual
+                        Scientific Meeting Indonesian Neurosurgical Pain Society (INPS)
+                    </p>
                 </div>
             </div>
             <div class="w-full max-w-2xl">
@@ -265,7 +270,8 @@
                             <p class="pb-5 m-0 text-sm"> Novotel Jakarta Mangga Dua Square </p>
                             <h5 class="pb-2 tracking-wide font-semibold">ADDRESS :
                             </h5>
-                            <p class="pb-5 m-0 text-sm"> Jl. Gunung Sahari No.3, Mangga Dua, Jakarta 10720, Indonesia </p>
+                            <p class="pb-5 m-0 text-sm"> Jl. Gunung Sahari No.3, Mangga Dua, Jakarta 10720, Indonesia
+                            </p>
 
                             <!-- <h5 class="text-white pb-2">RECEPTION INFO:</h5>
                                     <p class="pb-5 m-0">Booking: (+62) 1919-2020</p> -->
@@ -275,7 +281,7 @@
                     </div>
                 </div>
                 <div class="lg:w-2/3 w-full px-1 flex flex-col md:flex-row gap-2">
-                   
+
                     <iframe class="rounded-lg w-full "
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.9445350877345!2d106.8292808749897!3d-6.138154193848746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5e95865ff97%3A0xb8a7aa655d685d39!2sNovotel%20Jakarta%20Mangga%20Dua%20Square!5e0!3m2!1sid!2sid!4v1784044670327!5m2!1sid!2sid"
                         width="600" style="border:0;" allowfullscreen="" loading="lazy"

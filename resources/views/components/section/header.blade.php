@@ -44,8 +44,8 @@
         <div class="drawer-content flex flex-col">
             <div class="navbar">
                 <div class="navbar-start">
-                    <img src="assets/images/logo/logo-event-2.png" class="h-full max-h-12 hidden md:block" alt="Logo" />
-                    <img src="assets/images/logo/logo-event-dark-2.png" class="h-full max-h-12 md:hidden" alt="Logo" />
+                    <img src="assets/images/logo/logo-event.png" class="h-full max-h-12 hidden md:block" alt="Logo" />
+                    <img src="assets/images/logo/logo-event-dark.png" class="h-full max-h-12 md:hidden" alt="Logo" />
                 </div>
                 <div class="navbar-center hidden lg:flex py-2">
                     <x-section.menu />
@@ -68,7 +68,7 @@
             <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
             <ul class="bg-base-300 min-h-full w-80 p-4">
                 <!-- Sidebar content here -->
-                <img src="assets/images/logo/logo-event-dark-2.png" class="w-full mb-5 max-w-sm" />
+                <img src="assets/images/logo/logo-event-dark.png" class="w-full mb-5 max-w-sm" />
                 <x-section.menu-mobile />
             </ul>
         </div>
