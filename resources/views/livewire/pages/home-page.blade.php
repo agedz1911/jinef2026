@@ -11,12 +11,15 @@
                         <img src="{{asset('assets/images/logo/icon.png')}}" class="w-full max-w-40" alt="">
                     </div>
                     <div class="w-full max-w-2xl">
-                        <h1 class="font-bold text-lg lg:text-4xl text-white mt-0 mb-4">The 3<sup>rd</sup>
-                            Jakarta International  Neurosurgery Forum (JINeF) <br>
-                            <span class="lg:text-xl italic">in conjunction with </span><br>
-                        <span class="lg:text-3xl"> 6<sup>th</sup> Annual
-                                Scientific Meeting Indonesian  Neurosurgical Pain Society (INPS)</span></h1>
-                        
+                        <h1
+                            class="font-bold text-3xl lg:tracking-widest tracking-wide lg:text-6xl text-white mt-0 mb-2">
+                            JINeF - PIT INPS</h1>
+                        <p class="text-white text-xs lg:text-base">The 3<sup>rd</sup>
+                            Jakarta International Neurosurgery Forum (JINeF)
+                            <span class="italic">in conjunction with </span><br>
+                            6<sup>th</sup> Annual
+                            Scientific Meeting Indonesian Neurosurgical Pain Society (INPS)
+                        </p>
                     </div>
                 </div>
                 <div class="w-full">
@@ -82,11 +85,14 @@
                     <img src="{{asset('assets/images/logo/icon.png')}}" class="w-full max-w-40" alt="">
                 </div>
                 <div class="w-full ">
-                    <h1 class="font-bold text-lg lg:text-3xl text-[#9E1F63] mt-0 mb-4">The 3<sup>rd</sup>
-                            Jakarta International  Neurosurgery Forum (JINeF) <br>
-                            <span class="lg:text-lg italic">in conjunction with </span><br>
-                        <span class="lg:text-2xl"> 6<sup>th</sup> Annual
-                                Scientific Meeting Indonesian  Neurosurgical Pain Society (INPS)</span></h1>
+                    <h1 class="font-bold text-3xl lg:tracking-wide tracking-wide lg:text-6xl text-[#9E1F63] mt-0 mb-2">
+                        JINeF - PIT INPS</h1>
+                    <p class="text-[#9E1F63] text-xs lg:text-base">The 3<sup>rd</sup>
+                        Jakarta International Neurosurgery Forum (JINeF) <br>
+                        <span class="italic">in conjunction with </span><br>
+                        6<sup>th</sup> Annual
+                        Scientific Meeting Indonesian Neurosurgical Pain Society (INPS)
+                    </p>
                 </div>
             </div>
             <div class="w-full max-w-2xl">
