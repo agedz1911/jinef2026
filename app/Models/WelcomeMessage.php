@@ -11,6 +11,9 @@ class WelcomeMessage extends Model
         'name',
         'title',
         'image',
+        'name2',
+        'title2',
+        'image2',
         'description',
         'is_active',
         'no_urut'

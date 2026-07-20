@@ -29,6 +29,23 @@
                                     </div>
                                 </div>
                             </div>
+                            @if ($welcomeMessage->name2 && $welcomeMessage->title2 !== null)
+                                <div
+                                class="w-full justify-center lg:flex-row flex flex-col items-center lg:items-end gap-2 mt-3">
+                                <div class="avatar">
+                                    <img src="{{$welcomeMessage->image2 ? asset('storage/' . $welcomeMessage->image2) : "
+                                        assets/images/speaker.png"}}" alt="{{$welcomeMessage->name2}}"
+                                        class="w-full max-w-52 shadow-md rounded-lg ">
+                                </div>
+                                <div class="p-4 rounded-lg bg-[#9E1F63] w-full max-w-sm">
+                                    <div class="ps-4 border-s border-[#fff] border-spacing-7">
+                                        <p class="text-white text-xs italic">" {{$welcomeMessage->title2}}
+                                            "</p>
+                                        <h6 class="font-semibold text-white">{{$welcomeMessage->name2}}</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            @endif
 
                         </div>
                         <div class="order-1 lg:order-2 p-2 ">
@@ -64,6 +81,23 @@
                                     </div>
                                 </div>
                             </div>
+                            @if ($welcomeMessage->name2 && $welcomeMessage->title2 !== null)
+                                <div
+                                class="w-full justify-center lg:flex-row flex flex-col items-center lg:items-end gap-2 mt-3">
+                                <div class="avatar">
+                                    <img src="{{$welcomeMessage->image2 ? asset('storage/' . $welcomeMessage->image2) : "
+                                        assets/images/speaker.png"}}" alt="{{$welcomeMessage->name2}}"
+                                        class="w-full max-w-52 shadow-md rounded-lg ">
+                                </div>
+                                <div class="p-4 rounded-lg bg-[#9E1F63] w-full max-w-sm">
+                                    <div class="ps-4 border-s border-[#fff] border-spacing-7">
+                                        <p class="text-white text-xs italic">" {{$welcomeMessage->title2}}
+                                            "</p>
+                                        <h6 class="font-semibold text-white">{{$welcomeMessage->name2}}</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            @endif
 
                         </div>
                         <div class="order-1 lg:order-1 p-2 ">
