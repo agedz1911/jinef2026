@@ -7,11 +7,12 @@
     </section>
 
     <div class="px-5 lg:px-10 mt-10 flex flex-wrap gap-2 justify-end md:justify-between items-center">
-        <label class="input input-lg input-error rounded-lg w-full  max-w-6xl">
+        <label class="input input-lg input-error rounded-lg w-full  max-w-6xl   ">
             <i class="fa fa-search opacity-45 text-sm"></i>
             <input wire:model.live='search' type="text" class="grow" placeholder="Search Topics, And Sessions" />
         </label>
-        <a target="_blank" href="assets/download/schedule.pdf" class="btn btn-secondary rounded-lg"><i class="fa fa-download"></i> Download Schedule</a>
+        <a target="_blank" href="assets/download/schedule.pdf" class="btn btn-secondary rounded-lg"><i
+                class="fa fa-download"></i> Download Schedule</a>
     </div>
 
     <section class="px-5 md:px-10 pt-0 pb-10 md:py-20 bg-competition">
@@ -44,9 +45,9 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th style="width: 25%;">Ibis Style Room</th>
-                                        <th style="width: 25%;">Forensik RSUPN dr. Cipto Mangunkusumo</th>
-                                        <th style="width: 25%;">Novotel Room</th>
+                                        <th style="width: 25%;">Ibis Style, Mangga Dua</th>
+                                        <th style="width: 25%;">RSUPN dr. Cipto Mangunkusumo</th>
+                                        <th style="width: 25%;">Novotel Mangga Dua, Jakarta</th>
                                         <th style="width: 25%;">RSUPN dr. Cipto Mangunkusumo</th>
                                     </tr>
                                 </thead>
@@ -58,11 +59,20 @@
                                             @if ($room1->room == 'Ibis Style Room')
                                             <button class="hover:shadow-md block w-full my-1"
                                                 onclick="room1_8{{$loop->index}}.showModal()">
-                                                <div class="px-0 border border-indigo-200 py-4 w-full rounded-md bg-indigo-50">
-                                                    <div class="badge badge-sm badge-warning mb-2">{{$room1->category_sesi}}</div>
+                                                <div
+                                                    class="px-0 border border-indigo-200 py-4 w-full rounded-md bg-indigo-50">
+                                                    <div class="badge badge-sm badge-warning mb-2">
+                                                        {{$room1->category_sesi}}</div>
                                                     <br>
                                                     {{$room1->time}} <br>
-                                                    {{$room1->title_ses}}
+                                                    {{$room1->title_ses}} <br>
+                                                    <span class="text-xs text-gray-500">
+                                                        @if ($room1->detail_room === null)
+                                                        {{$room1->room}}
+                                                        @else
+                                                        {{$room1->detail_room}}
+                                                        @endif
+                                                    </span>
                                                 </div>
                                             </button>
                                             @endif
@@ -80,7 +90,11 @@
                                                         </div>
                                                         <div>
                                                             <p class="">Room :<span class="">
+                                                                    @if ($room1->detail_room === null)
                                                                     {{$room1->room}}
+                                                                    @else
+                                                                    {{$room1->detail_room}}
+                                                                    @endif
                                                                 </span>
                                                             </p>
                                                         </div>
@@ -127,11 +141,20 @@
                                             @if ($room2->room == 'Forensik RSUPN dr. Cipto Mangunkusumo')
                                             <button class="hover:shadow-md block w-full my-1"
                                                 onclick="room2_8{{$loop->index}}.showModal()">
-                                                <div class="px-0 border border-indigo-200 py-4 w-full rounded-md bg-indigo-50">
-                                                    <div class="badge badge-sm badge-warning mb-2">{{$room2->category_sesi}}</div>
+                                                <div
+                                                    class="px-0 border border-indigo-200 py-4 w-full rounded-md bg-indigo-50">
+                                                    <div class="badge badge-sm badge-warning mb-2">
+                                                        {{$room2->category_sesi}}</div>
                                                     <br>
                                                     {{$room2->time}} <br>
-                                                    {{$room2->title_ses}}
+                                                    {{$room2->title_ses}} <br>
+                                                    <span class="text-xs text-gray-500">
+                                                        @if ($room2->detail_room === null)
+                                                        {{$room2->room}}
+                                                        @else
+                                                        {{$room2->detail_room}}
+                                                        @endif
+                                                    </span>
                                                 </div>
                                             </button>
                                             @endif
@@ -149,7 +172,11 @@
                                                         </div>
                                                         <div>
                                                             <p class="">Room :<span class="">
+                                                                    @if ($room2->detail_room === null)
                                                                     {{$room2->room}}
+                                                                    @else
+                                                                    {{$room2->detail_room}}
+                                                                    @endif
                                                                 </span>
                                                             </p>
                                                         </div>
@@ -196,11 +223,20 @@
                                             @if ($room3->room == 'Novotel Room')
                                             <button class="hover:shadow-md block w-full my-1"
                                                 onclick="room3_8{{$loop->index}}.showModal()">
-                                                <div class="px-0 border border-indigo-200 py-4 w-full rounded-md bg-indigo-50">
-                                                    <div class="badge badge-sm badge-warning mb-2">{{$room3->category_sesi}}</div>
+                                                <div
+                                                    class="px-0 border border-indigo-200 py-4 w-full rounded-md bg-indigo-50">
+                                                    <div class="badge badge-sm badge-warning mb-2">
+                                                        {{$room3->category_sesi}}</div>
                                                     <br>
                                                     {{$room3->time}} <br>
-                                                    {{$room3->title_ses}}
+                                                    {{$room3->title_ses}} <br>
+                                                    <span class="text-xs text-gray-500">
+                                                        @if ($room3->detail_room === null)
+                                                        {{$room3->room}}
+                                                        @else
+                                                        {{$room3->detail_room}}
+                                                        @endif
+                                                    </span>
                                                 </div>
                                             </button>
                                             @endif
@@ -218,7 +254,11 @@
                                                         </div>
                                                         <div>
                                                             <p class="">Room :<span class="">
+                                                                    @if ($room3->detail_room === null)
                                                                     {{$room3->room}}
+                                                                    @else
+                                                                    {{$room3->detail_room}}
+                                                                    @endif
                                                                 </span>
                                                             </p>
                                                         </div>
@@ -265,11 +305,20 @@
                                             @if ($room4->room == 'RSUPN dr. Cipto Mangunkusumo')
                                             <button class="hover:shadow-md block w-full my-1"
                                                 onclick="room4_8{{$loop->index}}.showModal()">
-                                                <div class="px-0 border border-indigo-200 py-4 w-full rounded-md bg-indigo-50">
-                                                    <div class="badge badge-sm badge-warning mb-2">{{$room4->category_sesi}}</div>
+                                                <div
+                                                    class="px-0 border border-indigo-200 py-4 w-full rounded-md bg-indigo-50">
+                                                    <div class="badge badge-sm badge-warning mb-2">
+                                                        {{$room4->category_sesi}}</div>
                                                     <br>
                                                     {{$room4->time}} <br>
-                                                    {{$room4->title_ses}}
+                                                    {{$room4->title_ses}} <br>
+                                                    <span class="text-xs text-gray-500">
+                                                        @if ($room4->detail_room === null)
+                                                        {{$room4->room}}
+                                                        @else
+                                                        {{$room4->detail_room}}
+                                                        @endif
+                                                    </span>
                                                 </div>
                                             </button>
                                             @endif
@@ -287,7 +336,11 @@
                                                         </div>
                                                         <div>
                                                             <p class="">Room :<span class="">
+                                                                    @if ($room4->detail_room === null)
                                                                     {{$room4->room}}
+                                                                    @else
+                                                                    {{$room4->detail_room}}
+                                                                    @endif
                                                                 </span>
                                                             </p>
                                                         </div>
@@ -341,11 +394,11 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th style="width: 25%;">Ibis Style Room</th>
+                                        <th style="width: 25%;">Ibis Style, Mangga Dua</th>
                                         <th style="width: 25%;">Betawi Ballroom B</th>
                                         <th style="width: 25%;">Bugis A-B Room</th>
                                         <th style="width: 25%;">Sunda Room</th>
-                                        
+
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -355,12 +408,21 @@
                                             @if ($room91->room == 'Ibis Style Room')
                                             <button class="hover:shadow-md block w-full my-1"
                                                 onclick="room91_9{{$loop->index}}.showModal()">
-                                                <div class="border px-0 py-4 w-full rounded-md bg-indigo-50 border-indigo-200 ">
-                                                    <div class="badge badge-sm badge-warning mb-2">{{$room91->category_sesi}}
+                                                <div
+                                                    class="border px-0 py-4 w-full rounded-md bg-indigo-50 border-indigo-200 ">
+                                                    <div class="badge badge-sm badge-warning mb-2">
+                                                        {{$room91->category_sesi}}
                                                     </div>
                                                     <br>
                                                     {{$room91->time}} <br>
-                                                    {{$room91->title_ses}}
+                                                    {{$room91->title_ses}} <br>
+                                                    <span class="text-xs text-gray-500">
+                                                        @if ($room91->detail_room === null)
+                                                        {{$room91->room}}
+                                                        @else
+                                                        {{$room91->detail_room}}
+                                                        @endif
+                                                    </span>
                                                 </div>
                                             </button>
                                             @endif
@@ -378,7 +440,11 @@
                                                         </div>
                                                         <div>
                                                             <p class="">Room :<span class="">
+                                                                    @if ($room91->detail_room === null)
                                                                     {{$room91->room}}
+                                                                    @else
+                                                                    {{$room91->detail_room}}
+                                                                    @endif
                                                                 </span>
                                                             </p>
                                                         </div>
@@ -424,12 +490,21 @@
                                             @if ($room92->room == 'Betawi Ballroom B')
                                             <button class="hover:shadow-md block w-full my-1"
                                                 onclick="room92_9{{$loop->index}}.showModal()">
-                                                <div class="border px-0 py-4 w-full rounded-md bg-indigo-50 border-indigo-200 ">
-                                                    <div class="badge badge-sm badge-warning mb-2">{{$room92->category_sesi}}
+                                                <div
+                                                    class="border px-0 py-4 w-full rounded-md bg-indigo-50 border-indigo-200 ">
+                                                    <div class="badge badge-sm badge-warning mb-2">
+                                                        {{$room92->category_sesi}}
                                                     </div>
                                                     <br>
                                                     {{$room92->time}} <br>
-                                                    {{$room92->title_ses}}
+                                                    {{$room92->title_ses}} <br>
+                                                    <span class="text-xs text-gray-500">
+                                                        @if ($room92->detail_room === null)
+                                                        {{$room92->room}}
+                                                        @else
+                                                        {{$room92->detail_room}}
+                                                        @endif
+                                                    </span>
                                                 </div>
                                             </button>
                                             @endif
@@ -447,7 +522,11 @@
                                                         </div>
                                                         <div>
                                                             <p class="">Room :<span class="">
+                                                                    @if ($room92->detail_room === null)
                                                                     {{$room92->room}}
+                                                                    @else
+                                                                    {{$room92->detail_room}}
+                                                                    @endif
                                                                 </span>
                                                             </p>
                                                         </div>
@@ -493,12 +572,21 @@
                                             @if ($room93->room == 'Bugis A-B Room')
                                             <button class="hover:shadow-md block w-full my-1"
                                                 onclick="room93_9{{$loop->index}}.showModal()">
-                                                <div class="border px-0 py-4 w-full rounded-md bg-indigo-50 border-indigo-200 ">
-                                                    <div class="badge badge-sm badge-warning mb-2">{{$room93->category_sesi}}
+                                                <div
+                                                    class="border px-0 py-4 w-full rounded-md bg-indigo-50 border-indigo-200 ">
+                                                    <div class="badge badge-sm badge-warning mb-2">
+                                                        {{$room93->category_sesi}}
                                                     </div>
                                                     <br>
                                                     {{$room93->time}} <br>
-                                                    {{$room93->title_ses}}
+                                                    {{$room93->title_ses}} <br>
+                                                    <span class="text-xs text-gray-500">
+                                                        @if ($room93->detail_room === null)
+                                                        {{$room93->room}}
+                                                        @else
+                                                        {{$room93->detail_room}}
+                                                        @endif
+                                                    </span>
                                                 </div>
                                             </button>
                                             @endif
@@ -516,7 +604,11 @@
                                                         </div>
                                                         <div>
                                                             <p class="">Room :<span class="">
+                                                                    @if ($room93->detail_room === null)
                                                                     {{$room93->room}}
+                                                                    @else
+                                                                    {{$room93->detail_room}}
+                                                                    @endif
                                                                 </span>
                                                             </p>
                                                         </div>
@@ -562,12 +654,21 @@
                                             @if ($room94->room == 'Sunda Room')
                                             <button class="hover:shadow-md block w-full my-1"
                                                 onclick="room94_9{{$loop->index}}.showModal()">
-                                                <div class="border px-0 py-4 w-full rounded-md bg-indigo-50 border-indigo-200 ">
-                                                    <div class="badge badge-sm badge-warning mb-2">{{$room94->category_sesi}}
+                                                <div
+                                                    class="border px-0 py-4 w-full rounded-md bg-indigo-50 border-indigo-200 ">
+                                                    <div class="badge badge-sm badge-warning mb-2">
+                                                        {{$room94->category_sesi}}
                                                     </div>
                                                     <br>
                                                     {{$room94->time}} <br>
-                                                    {{$room94->title_ses}}
+                                                    {{$room94->title_ses}} <br>
+                                                    <span class="text-xs text-gray-500">
+                                                        @if ($room94->detail_room === null)
+                                                        {{$room94->room}}
+                                                        @else
+                                                        {{$room94->detail_room}}
+                                                        @endif
+                                                    </span>
                                                 </div>
                                             </button>
                                             @endif
@@ -585,7 +686,11 @@
                                                         </div>
                                                         <div>
                                                             <p class="">Room :<span class="">
+                                                                    @if ($room94->detail_room === null)
                                                                     {{$room94->room}}
+                                                                    @else
+                                                                    {{$room94->detail_room}}
+                                                                    @endif
                                                                 </span>
                                                             </p>
                                                         </div>
@@ -626,7 +731,7 @@
                                             </dialog>
                                             @endforeach
                                         </td>
-                                        
+
                                     </tr>
                                 </tbody>
                             </table>
@@ -653,11 +758,20 @@
                                             @if ($ballroomall10->room == 'Betawi Ballroom B')
                                             <button class="hover:shadow-md block w-full my-1"
                                                 onclick="ballroomall_10{{$loop->index}}.showModal()">
-                                                <div class="border px-0 py-4 w-full rounded-md bg-indigo-50 border-indigo-200 ">
-                                                    <div class="badge badge-sm badge-warning mb-2">{{$ballroomall10->category_sesi}}</div>
+                                                <div
+                                                    class="border px-0 py-4 w-full rounded-md bg-indigo-50 border-indigo-200 ">
+                                                    <div class="badge badge-sm badge-warning mb-2">
+                                                        {{$ballroomall10->category_sesi}}</div>
                                                     <br>
                                                     {{$ballroomall10->time}} <br>
-                                                    {{$ballroomall10->title_ses}}
+                                                    {{$ballroomall10->title_ses}} <br>
+                                                    <span class="text-xs text-gray-500">
+                                                        @if ($ballroomall10->detail_room === null)
+                                                        {{$ballroomall10->room}}
+                                                        @else
+                                                        {{$ballroomall10->detail_room}}
+                                                        @endif
+                                                    </span>
                                                 </div>
                                             </button>
                                             @endif
@@ -675,7 +789,11 @@
                                                         </div>
                                                         <div>
                                                             <p class="">Room :<span class="">
+                                                                    @if ($ballroomall10->detail_room === null)
                                                                     {{$ballroomall10->room}}
+                                                                    @else
+                                                                    {{$ballroomall10->detail_room}}
+                                                                    @endif
                                                                 </span>
                                                             </p>
                                                         </div>
@@ -721,11 +839,20 @@
                                             @if ($ballroom110->room == 'Bugis A-B Room')
                                             <button class="hover:shadow-md block w-full my-1"
                                                 onclick="ballroom1_10{{$loop->index}}.showModal()">
-                                                <div class="border px-0 py-4 w-full rounded-md bg-indigo-50 border-indigo-200 ">
-                                                    <div class="badge badge-sm badge-warning mb-2">{{$ballroom110->category_sesi}}</div>
+                                                <div
+                                                    class="border px-0 py-4 w-full rounded-md bg-indigo-50 border-indigo-200 ">
+                                                    <div class="badge badge-sm badge-warning mb-2">
+                                                        {{$ballroom110->category_sesi}}</div>
                                                     <br>
                                                     {{$ballroom110->time}} <br>
-                                                    {{$ballroom110->title_ses}}
+                                                    {{$ballroom110->title_ses}} <br>
+                                                    <span class="text-xs text-gray-500">
+                                                        @if ($ballroom110->detail_room === null)
+                                                        {{$ballroom110->room}}
+                                                        @else
+                                                        {{$ballroom110->detail_room}}
+                                                        @endif
+                                                    </span>
                                                 </div>
                                             </button>
                                             @endif
@@ -743,7 +870,11 @@
                                                         </div>
                                                         <div>
                                                             <p class="">Room :<span class="">
+                                                                    @if ($ballroom110->detail_room === null)
                                                                     {{$ballroom110->room}}
+                                                                    @else
+                                                                    {{$ballroom110->detail_room}}
+                                                                    @endif
                                                                 </span>
                                                             </p>
                                                         </div>
@@ -789,11 +920,20 @@
                                             @if ($ballroom210->room == 'Sunda Room')
                                             <button class="hover:shadow-md block w-full my-1"
                                                 onclick="ballroom2_10{{$loop->index}}.showModal()">
-                                                <div class="border px-0 py-4 w-full rounded-md bg-indigo-50 border-indigo-200 ">
-                                                    <div class="badge badge-sm badge-warning mb-2">{{$ballroom210->category_sesi}}</div>
+                                                <div
+                                                    class="border px-0 py-4 w-full rounded-md bg-indigo-50 border-indigo-200 ">
+                                                    <div class="badge badge-sm badge-warning mb-2">
+                                                        {{$ballroom210->category_sesi}}</div>
                                                     <br>
                                                     {{$ballroom210->time}} <br>
-                                                    {{$ballroom210->title_ses}}
+                                                    {{$ballroom210->title_ses}} <br>
+                                                    <span class="text-xs text-gray-500">
+                                                        @if ($ballroom210->detail_room === null)
+                                                        {{$ballroom210->room}}
+                                                        @else
+                                                        {{$ballroom210->detail_room}}
+                                                        @endif
+                                                    </span>
                                                 </div>
                                             </button>
                                             @endif
@@ -811,7 +951,11 @@
                                                         </div>
                                                         <div>
                                                             <p class="">Room :<span class="">
+                                                                    @if ($ballroom210->detail_room === null)
                                                                     {{$ballroom210->room}}
+                                                                    @else
+                                                                    {{$ballroom210->detail_room}}
+                                                                    @endif
                                                                 </span>
                                                             </p>
                                                         </div>
@@ -852,7 +996,7 @@
                                             </dialog>
                                             @endforeach
                                         </td>
-                                        
+
 
                                     </tr>
                                 </tbody>
@@ -868,8 +1012,8 @@
                                 <thead>
                                     <tr class="text-base font-semibold mb-2">
 
-                                        <th>Forensik RSUPN dr. Cipto Mangunkusumo</th>
-                                        
+                                        <th>RSUPN dr. Cipto Mangunkusumo</th>
+
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -879,11 +1023,20 @@
                                             @if ($ballroomall11->room == 'Forensik RSUPN dr. Cipto Mangunkusumo')
                                             <button class="hover:shadow-md block w-full my-1"
                                                 onclick="ballroomall_11{{$loop->index}}.showModal()">
-                                                <div class="border px-0 py-4 w-full rounded-md bg-indigo-50 border-indigo-200 ">
-                                                    <div class="badge badge-sm badge-warning mb-2">{{$ballroomall11->category_sesi}}</div>
+                                                <div
+                                                    class="border px-0 py-4 w-full rounded-md bg-indigo-50 border-indigo-200 ">
+                                                    <div class="badge badge-sm badge-warning mb-2">
+                                                        {{$ballroomall11->category_sesi}}</div>
                                                     <br>
                                                     {{$ballroomall11->time}} <br>
-                                                    {{$ballroomall11->title_ses}}
+                                                    {{$ballroomall11->title_ses}} <br>
+                                                    <span class="text-xs text-gray-500">
+                                                        @if ($ballroomall11->detail_room === null)
+                                                        {{$ballroomall11->room}}
+                                                        @else
+                                                        {{$ballroomall11->detail_room}}
+                                                        @endif
+                                                    </span>
                                                 </div>
                                             </button>
                                             @endif
@@ -901,7 +1054,11 @@
                                                         </div>
                                                         <div>
                                                             <p class="">Room :<span class="">
+                                                                    @if ($ballroomall11->detail_room === null)
                                                                     {{$ballroomall11->room}}
+                                                                    @else
+                                                                    {{$ballroomall11->detail_room}}
+                                                                    @endif
                                                                 </span>
                                                             </p>
                                                         </div>

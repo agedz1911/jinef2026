@@ -55,8 +55,9 @@ class ScheduleSessionResource extends Resource
                         'Novotel Room' => 'Novotel Room',
                         'Forensik RSUPN dr. Cipto Mangunkusumo' => 'Forensik RSUPN dr. Cipto Mangunkusumo',
                         'RSUPN dr. Cipto Mangunkusumo' => 'RSUPN dr. Cipto Mangunkusumo',
-                        
+
                     ]),
+                TextInput::make('detail_room'),
                 TextInput::make('moderator'),
                 Textarea::make('panelist'),
                 TextInput::make('no_urut')
@@ -71,6 +72,9 @@ class ScheduleSessionResource extends Resource
                 TextColumn::make('no_urut')
                     ->sortable(),
                 TextColumn::make('room')
+                    ->searchable()
+                    ->sortable(),
+                TextColumn::make('detail_room')
                     ->searchable()
                     ->sortable(),
                 TextColumn::make('title_ses')
@@ -88,6 +92,7 @@ class ScheduleSessionResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\ReplicateAction::make(),
                 Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
