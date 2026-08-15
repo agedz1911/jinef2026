@@ -61,6 +61,8 @@ class RegistrationResource extends Resource
                     ->numeric(),
                 DatePicker::make('date_onsite')
                     ->native(false),
+                TextInput::make('url')
+                    ->url(),
                 Toggle::make('is_Active')
                     ->default(true)
                     ->inline(),

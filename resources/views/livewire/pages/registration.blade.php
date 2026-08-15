@@ -42,15 +42,15 @@
                             </th>
                             <td class="px-6 py-4 text-center">
                                 IDR {{$regLocal->early_bird_reg != 0 ? number_format($regLocal->early_bird_reg,
-                                        0, ',', '.') : 'to be announce'}}
+                                0, ',', '.') : 'to be announce'}}
                             </td>
                             <td class="px-6 py-4 text-center">
                                 IDR {{$regLocal->normal_reg != 0 ? number_format($regLocal->normal_reg, 0, ',',
-                                        '.') : 'to be announce'}}
+                                '.') : 'to be announce'}}
                             </td>
                             {{-- <td class="px-6 py-4 text-center">
                                 IDR {{$regLocal->onsite_reg != 0 ? number_format($regLocal->onsite_reg, 0, ',',
-                                        '.'): 'to be announce'}}
+                                '.'): 'to be announce'}}
                             </td> --}}
                         </tr>
                         @endif
@@ -73,14 +73,22 @@
                         <span class="badge badge-xs badge-warning">{{$regLocal->title}}</span>
                         <div class="flex flex-wrap justify-between">
                             <h2 class="text-xl font-bold">{{$regLocal->subtitle}}</h2>
-                            <span class="text-xl">IDR {{$regLocal->early_bird_reg != 0 ? number_format($regLocal->early_bird_reg,
-                                        0, ',', '.') : 'to be announce'}}</span>
+                            <span class="text-xl">IDR {{$regLocal->early_bird_reg != 0 ?
+                                number_format($regLocal->early_bird_reg,
+                                0, ',', '.') : 'to be announce'}}</span>
                         </div>
                         {!! str($regLocal->description)->markdown()->sanitizeHtml() !!}
                         <div class="mt-6">
+                            @if ($regLocal->url !== null)
+                            <a href="{{$regLocal->url}}"
+                                class="btn bg-[#9E1F63] text-white hover:bg-[#9E1F63]  rounded-xl mb-3 btn-block"><i
+                                    class="fa-solid fa-list mx-3"></i>Register Now!</a>
+                            @else
                             <a href="https://expo.virconex-id.com/registration/jinef2026"
                                 class="btn bg-[#9E1F63] text-white hover:bg-[#9E1F63]  rounded-xl mb-3 btn-block"><i
                                     class="fa-solid fa-list mx-3"></i>Register Now!</a>
+                            @endif
+
                         </div>
                     </div>
                 </div>
@@ -96,7 +104,7 @@
                             <th scope="col" class="px-6 py-3">
                                 Category
                             </th>
-                             <th scope="col" class="px-6 py-3">
+                            <th scope="col" class="px-6 py-3">
                                 Early Bird Registration <br>
                                 up to 31 August 2026
                             </th>
@@ -116,13 +124,13 @@
                             </th>
                             <td class="px-6 py-4 text-center">
                                 {{$regLocal->early_bird_reg != 0 ? 'IDR ' .
-                                        number_format($regLocal->early_bird_reg,
-                                        0, ',', '.') : 'to be announce'}}
+                                number_format($regLocal->early_bird_reg,
+                                0, ',', '.') : 'to be announce'}}
                             </td>
                             <td class="px-6 py-4 text-center">
                                 {{$regLocal->normal_reg != 0 ? 'IDR' . number_format($regLocal->normal_reg, 0,
-                                        ',',
-                                        '.') : ''}}
+                                ',',
+                                '.') : ''}}
                             </td>
 
                         </tr>
@@ -210,7 +218,8 @@
                                 <span class="badge badge-xs badge-warning">{{$regLocal->title}}</span>
                                 <div class="flex flex-wrap justify-between">
                                     <h2 class="text-xl font-bold">{{$regLocal->subtitle}}</h2>
-                                    <span class="text-xl">IDR {{$regLocal->early_bird_reg != 0 ? number_format($regLocal->early_bird_reg,
+                                    <span class="text-xl">IDR {{$regLocal->early_bird_reg != 0 ?
+                                        number_format($regLocal->early_bird_reg,
                                         0, ',', '.') : 'to be announce'}}</span>
                                 </div>
                                 {!! str($regLocal->description)->markdown()->sanitizeHtml() !!}
@@ -468,7 +477,8 @@
                                         0, ',', '.') : 'to be announce'}}
                                     </td>
                                     <td class="px-6 py-4 text-center">
-                                        {{$regForeign->normal_reg != 0 ? 'USD' . number_format($regForeign->normal_reg, 0,
+                                        {{$regForeign->normal_reg != 0 ? 'USD' . number_format($regForeign->normal_reg,
+                                        0,
                                         ',',
                                         '.') : ''}}
                                     </td>
@@ -489,7 +499,7 @@
 
                 </div>
 
-            </div> 
+            </div>
         </div>--}}
     </section>
 
