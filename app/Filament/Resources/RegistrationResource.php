@@ -34,6 +34,7 @@ class RegistrationResource extends Resource
                 Select::make('category_reg')
                     ->options([
                         'symposium' => 'Symposium',
+                        'symposium & Workshop' => 'Symposium & Workshop',
                         'workshop' => 'Workshop',
                         'workshop microsurgery' => 'Workshop microsurgery ',
                         'master class' => 'Master Class',
