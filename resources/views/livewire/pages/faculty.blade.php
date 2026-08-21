@@ -38,7 +38,7 @@
 
                             @foreach ($indofaculties as $indo)
                             <div
-                                class="card bg-[#3C3793]/10 shadow-sm p-0 hover:shadow-md hover:scale-105 transition-all duration-200">
+                                class="card bg-white shadow-sm p-0 hover:shadow-md hover:scale-105 transition-all duration-200">
                                 
                                 <figure onclick="my_modal_{{$loop->index}}.showModal()"
                                     class="relative hover:cursor-pointer ">
@@ -128,7 +128,7 @@
                         <div wire:loading.remove wire:target="searchTerm" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                             @foreach ($foreignfaculties as $foreign)
                             <div
-                                class="card bg-[#3C3793]/10 shadow-sm p-0 hover:shadow-md hover:scale-105 transition-all duration-200">
+                                class="card bg-white shadow-sm p-0 hover:shadow-md hover:scale-105 transition-all duration-200">
                                 <figure onclick="my_modal_f{{$loop->index}}.showModal()"
                                     class="relative hover:cursor-pointer ">
                                     <img src="{{$foreign->image ? asset('storage/' . $foreign->image) : "
