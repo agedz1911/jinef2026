@@ -31,7 +31,7 @@
                         - 15<sup>th</sup> 2026</span> Novotel Jakarta Mangga Dua Square, Jakarta, Indonesia
                 </p>
                 <div class="mt-7 w-full gap-1 flex flex-wrap">
-                    <a
+                    <a href="/assets/downloads/announcement-jinef.pdf"
                         class="text-white hover:cursor-pointer border bg-[#9E1F63] hover:border-[#9E1F63] focus:ring-4 focus:outline-none focus:ring-[#9E1F63] font-medium rounded-lg text-sm px-5 md:px-10 py-3 text-center  dark:border-[#9E1F63] dark:text-[#9E1F63] dark:hover:text-white dark:hover:bg-white dark:focus:ring-white"><i
                             class="fa-solid fa-file-download mr-1 text-xs"></i>Download Announcement </a>
                     <a href="/registration" wire:navigate

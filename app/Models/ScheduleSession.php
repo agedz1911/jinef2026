@@ -4,12 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class ScheduleSession extends Model
 {
     use HasFactory;
-    
+
     protected $fillable = [
         'category_sesi',
         'title_ses',
@@ -19,12 +20,18 @@ class ScheduleSession extends Model
         'detail_room',
         'moderator',
         'panelist',
-        'no_urut'
+        'no_urut',
+        'faculty_id'
     ];
-    
 
-    public function schedules() : HasMany
+
+    public function schedules(): HasMany
     {
-       return $this->hasMany(Schedule::class, 'sesi_id');
+        return $this->hasMany(Schedule::class, 'sesi_id');
+    }
+
+    public function faculty(): BelongsTo
+    {
+        return $this->belongsTo(Faculty::class, 'faculty_id');
     }
 }

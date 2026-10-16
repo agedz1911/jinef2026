@@ -25,4 +25,9 @@ class Faculty extends Model
     {
        return $this->hasMany(Schedule::class, 'faculty_id');
     }
+
+    public function scheduleSessions() : HasMany
+    {
+       return $this->hasMany(ScheduleSession::class, 'faculty_id');
+    }
 }

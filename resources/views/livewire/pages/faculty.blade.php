@@ -34,12 +34,13 @@
                             <div class="skeleton h-4 w-28"></div>
                             <div class="skeleton h-4 w-full"></div>
                         </div>
-                        <div wire:loading.remove wire:target="searchTerm" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
+                        <div wire:loading.remove wire:target="searchTerm"
+                            class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
 
                             @foreach ($indofaculties as $indo)
                             <div
                                 class="card bg-white shadow-sm p-0 hover:shadow-md hover:scale-105 transition-all duration-200">
-                                
+
                                 <figure onclick="my_modal_{{$loop->index}}.showModal()"
                                     class="relative hover:cursor-pointer ">
                                     <img src="{{$indo->image ? asset('storage/' . $indo->image) : "
@@ -75,7 +76,23 @@
                                             <p class="text-sm text-gray-500">{{$indo->description}}</p>
                                         </div>
                                     </div>
-                                    <p class="font-medium text-lg text-gray-700">Session</p>
+                                    @if ($indo->scheduleSessions->isNotEmpty())
+                                    <p class="font-medium text-lg text-gray-700">Session as Moderator</p>
+                                    <div class="border-t pt-5">
+                                        @foreach ($indo->scheduleSessions as $session)
+                                        <div class="flex flex-wrap gap-5 text-green-600">
+                                            <p>{{\Carbon\Carbon::parse($session->date)->format('d
+                                                F Y')}}</p>
+                                            <p>{{$session->time}}</p>
+                                            <p>{{$session->room}}</p>
+                                        </div>
+                                        <p class="text-gray-500 mb-5 border-b border-dashed border-gray-800 pb-3">
+                                            {{$session->title_ses}}
+                                        </p>
+                                        @endforeach
+                                    </div>
+
+                                    <p class="font-medium text-lg text-gray-700">Session as Speaker</p>
                                     <div class="border-t pt-5">
                                         @foreach ($indo->schedules as $schedule)
                                         <div class="flex flex-wrap gap-5 text-green-600">
@@ -91,6 +108,7 @@
                                         </p>
                                         @endforeach
                                     </div>
+                                    @endif
                                     <div class="modal-action">
                                         <form method="dialog">
                                             <!-- if there is a button, it will close the modal -->
@@ -110,7 +128,7 @@
 
                     <input type="radio" name="my_tabs_2"
                         class="tab uppercase tracking-wider  text-lg hover:text-[#262262] text-[#9E1F63]"
-                        aria-label="International faculties"  />
+                        aria-label="International faculties" />
                     <div class="tab-content  p-5 rounded-lg">
                         {{-- @dd($indofaculties) --}}
                         @if (!$readyToLoad)
@@ -125,7 +143,8 @@
                             <div class="skeleton h-4 w-28"></div>
                             <div class="skeleton h-4 w-full"></div>
                         </div>
-                        <div wire:loading.remove wire:target="searchTerm" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                        <div wire:loading.remove wire:target="searchTerm"
+                            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                             @foreach ($foreignfaculties as $foreign)
                             <div
                                 class="card bg-white shadow-sm p-0 hover:shadow-md hover:scale-105 transition-all duration-200">
@@ -172,6 +191,21 @@
                                             <p class="text-sm text-gray-500">{{$foreign->description}}</p>
                                         </div>
                                     </div>
+                                    @if ($foreign->scheduleSessions->isNotEmpty())
+                                    <p class="font-medium text-lg text-gray-700">Session as Moderator</p>
+                                    <div class="border-t pt-5">
+                                        @foreach ($foreign->scheduleSessions as $session)
+                                        <div class="flex flex-wrap gap-5 text-green-600">
+                                            <p>{{\Carbon\Carbon::parse($session->date)->format('d
+                                                F Y')}}</p>
+                                            <p>{{$session->time}}</p>
+                                            <p>{{$session->room}}</p>
+                                        </div>
+                                        <p class="text-gray-500 mb-5 border-b border-dashed border-gray-800 pb-3">
+                                            {{$session->title_ses}}
+                                        </p>
+                                        @endforeach
+                                    </div>
                                     <p class="font-medium text-lg text-gray-700">Session</p>
                                     <div class="border-t pt-5">
                                         @foreach ($foreign->schedules as $schedule)
@@ -188,6 +222,7 @@
                                         </p>
                                         @endforeach
                                     </div>
+                                    @endif
                                     <div class="modal-action">
                                         <form method="dialog">
                                             <!-- if there is a button, it will close the modal -->
