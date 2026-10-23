@@ -46,9 +46,9 @@
                                 <thead>
                                     <tr>
                                         <th style="width: 25%;">Ibis Style, Mangga Dua</th>
-                                        <th style="width: 25%;">RSUPN dr. Cipto Mangunkusumo</th>
+                                        <!-- <th style="width: 25%;">RSUPN dr. Cipto Mangunkusumo</th> -->
                                         <th style="width: 25%;">Novotel Mangga Dua, Jakarta</th>
-                                        <th style="width: 25%;">RSUPN dr. Cipto Mangunkusumo</th>
+                                        <!-- <th style="width: 25%;">RSUPN dr. Cipto Mangunkusumo</th> -->
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -135,8 +135,7 @@
                                             </dialog>
                                             @endforeach
                                         </td>
-                                        <td class="align-top">
-                                            {{-- @dd($delapan) --}}
+                                        {{-- <td class="align-top">
                                             @foreach ($delapan as $room2)
                                             @if ($room2->room == 'Forensik RSUPN dr. Cipto Mangunkusumo')
                                             <button class="hover:shadow-md block w-full my-1"
@@ -188,7 +187,6 @@
                                                         </span></p>
                                                     <div class="overflow-x-auto mt-5">
                                                         <table class="table">
-                                                            <!-- head -->
                                                             <thead>
                                                                 <tr>
                                                                     <th style="width: 18%">Time</th>
@@ -209,14 +207,13 @@
                                                     </div>
                                                     <div class="modal-action">
                                                         <form method="dialog">
-                                                            <!-- if there is a button in form, it will close the modal -->
                                                             <button class="btn">Close</button>
                                                         </form>
                                                     </div>
                                                 </div>
                                             </dialog>
                                             @endforeach
-                                        </td>
+                                        </td> --}}
                                         <td class="align-top">
                                             {{-- @dd($delapan) --}}
                                             @foreach ($delapan as $room3)
@@ -299,8 +296,7 @@
                                             </dialog>
                                             @endforeach
                                         </td>
-                                        <td class="align-top">
-                                            {{-- @dd($delapan) --}}
+                                        {{-- <td class="align-top">
                                             @foreach ($delapan as $room4)
                                             @if ($room4->room == 'RSUPN dr. Cipto Mangunkusumo')
                                             <button class="hover:shadow-md block w-full my-1"
@@ -380,7 +376,7 @@
                                                 </div>
                                             </dialog>
                                             @endforeach
-                                        </td>
+                                        </td> --}}
                                     </tr>
                                 </tbody>
                             </table>
