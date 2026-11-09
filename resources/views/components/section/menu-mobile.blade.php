@@ -8,7 +8,7 @@
         <li>
             <a href="/welcome-message" wire:navigate
                 class="{{ request()->is('welcome-message') ? 'text-[#9E1F63]' : '' }} justify-between font-normal hover:text-[#D82128] after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-[#9E1F63] hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Welcome Message
-                 <i class="fa-solid fa-angle-right"></i></a>
+                <i class="fa-solid fa-angle-right"></i></a>
         </li>
         <li>
             <a href="/organizing-committee" wire:navigate
@@ -23,7 +23,7 @@
         {{-- <li>
             <a href="/topics" wire:navigate
                 class="{{ request()->is('topics') ? 'text-[#9E1F63]' : '' }} justify-between font-normal hover:text-[#D82128] after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-[#9E1F63] hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">
-                Topics <i class="fa-solid fa-angle-right"></i></a>
+        Topics <i class="fa-solid fa-angle-right"></i></a>
         </li> --}}
         <li>
             <a href="/program-at-glance" wire:navigate
@@ -40,21 +40,21 @@
                 class="{{ request()->is('registration') ? 'text-[#9E1F63]' : '' }} justify-between font-normal hover:text-[#D82128] after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-[#9E1F63] hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Registration
                 <i class="fa-solid fa-angle-right"></i></a>
         </li>
-         {{--<li>
+        {{--<li>
             <a href="/accommodation" wire:navigate
                 class="{{ request()->is('accommodation') ? 'text-[#9E1F63]' : '' }} justify-between font-normal hover:text-[#D82128] after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-[#9E1F63] hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Accommodation
-                <i class="fa-solid fa-angle-right"></i></a>
-        </li>
+        <i class="fa-solid fa-angle-right"></i></a>
+        </li> --}}
         <li>
             <a href="/presentation-schedule" wire:navigate
                 class="{{ request()->is('presentation-schedule') ? 'text-[#9E1F63]' : '' }} justify-between font-normal hover:text-[#D82128] after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-[#9E1F63] hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Free Paper Schedule
                 <i class="fa-solid fa-angle-right"></i></a>
         </li>
         <li>
-            <a href="#" 
-                class=" justify-between font-normal hover:text-[#D82128] after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-[#9E1F63] hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Free Paper Presentation Submission 
+            <a href="#"
+                class=" justify-between font-normal hover:text-[#D82128] after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-[#9E1F63] hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Free Paper Presentation Submission
                 <i class="fa-solid fa-angle-right"></i></a>
-        </li> --}}
+        </li>
         <li>
             <a href="/submission" wire:navigate
                 class="{{ request()->is('submission') ? 'text-[#9E1F63]' : '' }} justify-between font-normal hover:text-[#D82128] after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-[#9E1F63] hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Abstract Submission
@@ -63,10 +63,10 @@
         {{--<li>
             <a href="/visiting" wire:navigate
                 class="{{ request()->is('visiting') ? 'text-[#9E1F63]' : '' }} justify-between font-normal hover:text-[#D82128] after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-[#9E1F63] hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Visiting
-                <i class="fa-solid fa-angle-right"></i></a>
+        <i class="fa-solid fa-angle-right"></i></a>
         </li>
-         <li>
-            <a href="/visiting#venue" 
+        <li>
+            <a href="/visiting#venue"
                 class="{{ request()->is('visiting') ? 'text-[#9E1F63]' : '' }} justify-between font-normal hover:text-[#D82128] after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-[#9E1F63] hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Conference Venue
                 <i class="fa-solid fa-angle-right"></i></a>
         </li>

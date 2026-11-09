@@ -6,29 +6,10 @@
         </div>
     </section>
 
-    <section class="px-5 md:px-10 pt-0 pb-10 md:py-20">
-        <div class="mt-10">
-            <div class="text-center lg:text-start mb-5 md:mb-10">
-                <p class="mb-1 kuning">Free Paper</p>
-                <h2 class="mb-2 uppercase text-3xl font-semibold">Guideline for Free Paper<span class="text-[#008068]"> Presentation</span>
-                </h2>
-            </div>
-            @foreach ($presentationGuides as $item)
-            <div class="collapse collapse-arrow bg-base-100 border border-base-300">
-                <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title font-semibold">{{ $item->title }}</div>
-                <div class="collapse-content text-sm text-gray-500">
-                    {!! str($item->description)->markdown()->sanitizeHtml() !!}
-                </div>
-            </div>
-            @endforeach
-        </div>
-    </section>
-
     <section class="px-5 md:px-10 py-10 md:py-20">
         <div class="text-center lg:text-start mb-5">
             <p class="mb-1 kuning">Free Paper</p>
-            <h2 class="mb-2 uppercase text-3xl font-semibold">Free Paper<span class="text-[#008068]"> Schedule</span>
+            <h2 class="mb-2 uppercase text-3xl font-semibold">Free Paper<span class="text-[#9E1F63]"> Schedule</span>
             </h2>
         </div>
 
@@ -38,29 +19,34 @@
                     <div class="dropdown dropdown-hover dropdown-center">
                         <div tabindex="0" role="button" class="fa fa-filter m-1"></div>
                         <ul tabindex="-1" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                            <li><a href="#" wire:click.prevent="resetFilter()" class="{{ $selectedCategory == '' ? 'text-[#008068]' : '' }}">
+                            <li><a href="#" wire:click.prevent="resetFilter()"
+                                    class="{{ $selectedCategory == '' ? 'text-[#9E1F63]' : '' }}">
                                     All Categories
                                 </a>
                             </li>
-                            <li><a href="#" wire:click.prevent="filterByCategory('Podium Presentation')" class="{{ $selectedCategory == 'Podium Presentation' ? 'text-[#008068]' : '' }}">
-                                    Podium Presentation
+                            <li><a href="#" wire:click.prevent="filterByCategory('Oral Presentation')"
+                                    class="{{ $selectedCategory == 'Oral Presentation' ? 'text-[#9E1F63]' : '' }}">
+                                    Oral Presentation
                                 </a>
                             </li>
-                            <li><a href="#" wire:click.prevent="filterByCategory('Moderated e-Poster')" class="{{ $selectedCategory == 'Moderated e-Poster' ? 'text-[#008068]' : '' }}">
-                                    Moderated e-Poster
+                            <li><a href="#" wire:click.prevent="filterByCategory('E-Poster')"
+                                    class="{{ $selectedCategory == 'E-Poster' ? 'text-[#9E1F63]' : '' }}">
+                                    E-Poster
                                 </a>
                             </li>
-                            <li><a href="#" wire:click.prevent="filterByCategory('Unmoderated Poster')" class="{{ $selectedCategory == 'Unmoderated Poster' ? 'text-[#008068]' : '' }}">
+                            {{-- <li><a href="#" wire:click.prevent="filterByCategory('Unmoderated Poster')"
+                                    class="{{ $selectedCategory == 'Unmoderated Poster' ? 'text-[#9E1F63]' : '' }}">
                                     Unmoderated Poster
                                 </a>
-                            </li>
+                            </li> --}}
 
                         </ul>
                     </div>
                     <div>
                         <label class="input">
                             <i class="fa fa-search"></i>
-                            <input wire:model.live.debounce.500ms='search' type="search" class="grow " placeholder="Search code, name, title, category" />
+                            <input wire:model.live.debounce.500ms='search' type="search" class="grow "
+                                placeholder="Search code, name, title, category" />
                         </label>
                     </div>
                 </div>
@@ -88,7 +74,7 @@
                         <th scope="col">Category</th>
                         <th scope="col">Title</th>
                         <th scope="col">Insitution</th>
-                        <th scope="col">Country</th>
+                        {{-- <th scope="col">Country</th> --}}
                         <th scope="col">Date</th>
                         <th scope="col">Time</th>
                         <th scope="col">Room</th>
@@ -97,20 +83,13 @@
                 <tbody>
                     @forelse ($paperSchedules as $paper)
                     <tr>
+                        <td>{{$loop->iteration}}</td>
                         <td>{{$paper->code_abstract}}</td>
                         <td>{{$paper->name_participant}}</td>
-                        <td>
-                            @if ($paper->paperCategory->name == 'Podium Presentation')
-                            <span class="badge badge-success">{{$paper->paperCategory->name}}</span>
-                            @elseif ($paper->paperCategory->name == 'Moderated e-Poster')
-                            <span class="badge bg-info">{{$paper->paperCategory->name}}</span>
-                            @elseif ($paper->paperCategory->name == 'Unmoderated Poster')
-                            <span class="badge bg-warning">{{$paper->paperCategory->name}}</span>
-                            @endif
-                        </td>
+                        <td>{{$paper->paperCategory->name}}</td>
                         <td>{{$paper->title}}</td>
                         <td>{{$paper->institution}}</td>
-                        <td>{{$paper->country}}</td>
+                        {{-- <td>{{$paper->country}}</td> --}}
                         <td>{{ \Carbon\Carbon::parse($paper->date_presenter)->Format('d F Y') }}</td>
                         <td>{{$paper->time_presenter}}</td>
                         <td>{{$paper->room}}</td>
@@ -132,6 +111,27 @@
 
     </section>
 
-    {{-- <livewire:section.free-paper-api /> --}}
+    <section class="px-5 md:px-10 pt-0 pb-10 md:py-20">
+        <div class="mt-10">
+            <div class="text-center lg:text-start mb-5 md:mb-10">
+                <p class="mb-1 kuning">Free Paper</p>
+                <h2 class="mb-2 uppercase text-3xl font-semibold">Guideline for Free Paper<span class="text-[#9E1F63]">
+                        Presentation</span>
+                </h2>
+            </div>
+            @foreach ($presentationGuides as $item)
+            <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title font-semibold">{{ $item->title }}</div>
+                <div class="collapse-content text-sm text-gray-500">
+                    {!! str($item->description)->markdown()->sanitizeHtml() !!}
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </section>
+
+    {{--
+    <livewire:section.free-paper-api /> --}}
 
 </div>

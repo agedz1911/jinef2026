@@ -5,12 +5,14 @@ namespace App\Filament\Clusters\ScientificSchedule\Resources;
 use App\Filament\Clusters\ScientificSchedule;
 use App\Filament\Clusters\ScientificSchedule\Resources\SchedulePaperResource\Pages;
 use App\Filament\Clusters\ScientificSchedule\Resources\SchedulePaperResource\RelationManagers;
+use App\Filament\Imports\SchedulePaperImporter;
 use App\Models\SchedulePaper;
 use Filament\Forms;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Tables\Actions\ImportAction;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
@@ -62,14 +64,12 @@ class SchedulePaperResource extends Resource
     public static function table(Table $table): Table
     {
         return $table
+            ->headerActions([
+                ImportAction::make()
+                    ->importer(SchedulePaperImporter::class)
+            ])
             ->columns([
                 Tables\Columns\TextColumn::make('paperCategory.name')
-                    ->badge()
-                    ->color(fn(string $state): string => match ($state) {
-                        'Podium Presentation' => 'success',
-                        'Moderated e-Poster' => 'info',
-                        'Unmoderated Poster' => 'warning',
-                    })
                     ->sortable(),
                 Tables\Columns\TextColumn::make('code_abstract')
                     ->searchable(),
