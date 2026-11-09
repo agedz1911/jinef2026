@@ -73,7 +73,7 @@
                     Free Paper Schedule <i class="fa-solid fa-angle-right"></i></a>
             </li>
             <li>
-                <a href="#" class="justify-between hover:text-[#D82128]">Free Paper Presentation Submission <i
+                <a href="https://expo.virconex-id.com/eposter/jinef2026/auth/login.php" class="justify-between hover:text-[#D82128]">Free Paper Presentation Submission <i
                         class="fa-solid fa-angle-right"></i></a>
             </li>
             <li>
